@@ -1,0 +1,104 @@
+{
+  "term": {
+    "name": "Spring 2026-27",
+    "first_day": "2027-01-18",
+    "last_day": "2027-05-07",
+    "timezone": "Asia/Beirut",
+    "note": "Sample term dates for the demo. Replace with the official AUB academic calendar."
+  },
+  "grade_points": {
+    "A+": 4.3,
+    "A": 4.0,
+    "A-": 3.7,
+    "B+": 3.3,
+    "B": 3.0,
+    "B-": 2.7,
+    "C+": 2.3,
+    "C": 2.0,
+    "C-": 1.7,
+    "D+": 1.3,
+    "D": 1.0,
+    "D-": 0.7,
+    "F": 0.0
+  },
+  "passing_grade": "D-",
+  "max_credits_per_term": 17,
+  "standing_thresholds": {
+    "sophomore": 0,
+    "junior": 30,
+    "senior": 60
+  },
+  "assumptions": [
+    "max_credits_per_term (17) is a demo setting: check AUBsis or your advisor for your real limit.",
+    "standing_thresholds are demo settings: check the AUB catalogue for the official classification."
+  ],
+  "cs_major": {
+    "required_cmps": [
+      "CMPS 201",
+      "CMPS 202",
+      "CMPS 214",
+      "CMPS 215",
+      "CMPS 221",
+      "CMPS 240",
+      "CMPS 241",
+      "CMPS 271"
+    ],
+    "required_math": [
+      [
+        "MATH 201"
+      ],
+      [
+        "MATH 211",
+        "CMPS 211"
+      ],
+      [
+        "MATH 218",
+        "MATH 219"
+      ],
+      [
+        "STAT 230",
+        "STAT 233"
+      ]
+    ],
+    "cmps_elective_credits": 18,
+    "elective_rule": "CMPS courses numbered 214 and above, except CMPS 260 and CMPS 269.",
+    "min_grade_rules": "At least C+ in CMPS 201 and CMPS 202; average of at least 2.3 in CS courses."
+  },
+  "focus_areas": {
+    "systems": {
+      "name": "Systems",
+      "courses": [
+        "CMPS 224",
+        "CMPS 231",
+        "CMPS 232",
+        "CMPS 242",
+        "CMPS 243",
+        "CMPS 244"
+      ],
+      "needed": 3
+    },
+    "ai_data": {
+      "name": "AI and Data Science",
+      "courses": [
+        "CMPS 244",
+        "CMPS 261",
+        "CMPS 262"
+      ],
+      "needed": 3
+    },
+    "software": {
+      "name": "Software Engineering",
+      "courses": [
+        "CMPS 244",
+        "CMPS 278",
+        "CMPS 279",
+        "CMPS 288"
+      ],
+      "needed": 3
+    }
+  },
+  "repeat_if_below": {
+    "CMPS 201": "C+",
+    "CMPS 202": "C+"
+  }
+}

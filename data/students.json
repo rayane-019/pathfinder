@@ -1,0 +1,50 @@
+{
+  "note": "Fictional demo students. Never put real student records in this repository.",
+  "students": [
+    {
+      "id": "202300123",
+      "name": "Demo Student (CS junior)",
+      "major": "Computer Science",
+      "credits_earned": 54,
+      "completed": [
+        {"code": "CMPS 201", "grade": "A-", "credits": 3},
+        {"code": "CMPS 202", "grade": "B+", "credits": 3},
+        {"code": "CMPS 211", "grade": "B", "credits": 3},
+        {"code": "CMPS 214", "grade": "B-", "credits": 3},
+        {"code": "CMPS 221", "grade": "B", "credits": 3},
+        {"code": "CMPS 241", "grade": "B+", "credits": 3},
+        {"code": "MATH 201", "grade": "B", "credits": 3},
+        {"code": "MATH 218", "grade": "B+", "credits": 3},
+        {"code": "STAT 230", "grade": "A-", "credits": 3},
+        {"code": "ENGL 203", "grade": "B+", "credits": 3},
+        {"code": "ENGL 204", "grade": "B", "credits": 3},
+        {"code": "ARAB 201", "grade": "A", "credits": 3},
+        {"code": "HIST 201", "grade": "B", "credits": 3},
+        {"code": "PHIL 210", "grade": "B+", "credits": 3},
+        {"code": "PSYC 201", "grade": "A-", "credits": 3},
+        {"code": "ECON 211", "grade": "B", "credits": 3},
+        {"code": "BIOL 201", "grade": "B-", "credits": 3},
+        {"code": "SOAN 201", "grade": "B+", "credits": 3}
+      ],
+      "preferences": {"focus_area": "ai_data"}
+    },
+    {
+      "id": "202400456",
+      "name": "Demo Student (CS sophomore, C in CMPS 202)",
+      "major": "Computer Science",
+      "credits_earned": 27,
+      "completed": [
+        {"code": "CMPS 201", "grade": "B", "credits": 3},
+        {"code": "CMPS 202", "grade": "C", "credits": 3},
+        {"code": "CMPS 211", "grade": "B-", "credits": 3},
+        {"code": "MATH 201", "grade": "C+", "credits": 3},
+        {"code": "MATH 218", "grade": "B", "credits": 3},
+        {"code": "STAT 230", "grade": "B", "credits": 3},
+        {"code": "ENGL 203", "grade": "B", "credits": 3},
+        {"code": "ARAB 201", "grade": "B+", "credits": 3},
+        {"code": "HIST 201", "grade": "B", "credits": 3}
+      ],
+      "preferences": {}
+    }
+  ]
+}

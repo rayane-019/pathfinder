@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PathFinder · AUB Course Planner Agent</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root { --dark:#0F1E2E; --light:#F6F4EF; --light2:#ECE7DD; --teal:#0E7C6B; --orange:#F0A35E; --muted:#4A5568; --line:#D9D2C4; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:Inter, Arial, sans-serif; background:var(--light); color:var(--dark); }
+  header { background:var(--dark); color:var(--light); padding:14px 24px; display:flex; align-items:center; gap:16px; }
+  header h1 { margin:0; font-family:'Space Grotesk', Arial, sans-serif; font-size:24px; }
+  header .tag { color:var(--orange); font-size:13px; letter-spacing:.08em; text-transform:uppercase; }
+  header .spacer { flex:1; }
+  header select, header label { font-size:14px; color:var(--light); }
+  header select { background:#1A2D42; border:1px solid #2C4560; border-radius:6px; padding:6px; }
+  main { display:grid; grid-template-columns: 420px 1fr; gap:16px; padding:16px; height:calc(100vh - 62px); }
+  .panel { background:#FFFDF8; border:1px solid var(--line); border-radius:12px; display:flex; flex-direction:column; min-height:0; }
+  .panel h2 { margin:0; padding:12px 16px; font-family:'Space Grotesk', Arial, sans-serif; font-size:16px; border-bottom:1px solid var(--line); }
+  #chat { flex:1; overflow:auto; padding:16px; display:flex; flex-direction:column; gap:12px; }
+  .msg { padding:10px 14px; border-radius:10px; line-height:1.45; font-size:14px; white-space:pre-wrap; }
+  .msg.user { background:var(--teal); color:var(--light); align-self:flex-end; max-width:85%; }
+  .msg.agent { background:var(--light2); align-self:flex-start; max-width:100%; }
+  .msg table { border-collapse:collapse; font-size:12px; margin:6px 0; white-space:normal; }
+  .msg td, .msg th { border:1px solid var(--line); padding:3px 6px; text-align:left; }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; padding:0 16px 8px; }
+  .chip { font-size:12px; border:1px solid var(--teal); color:var(--teal); background:none; border-radius:999px; padding:4px 10px; cursor:pointer; }
+  form { display:flex; gap:8px; padding:12px 16px; border-top:1px solid var(--line); }
+  input[type=text] { flex:1; padding:10px; border:1px solid var(--line); border-radius:8px; font:inherit; }
+  button.primary { background:var(--teal); color:var(--light); border:none; border-radius:8px; padding:10px 14px; font-weight:600; cursor:pointer; }
+  button.primary:disabled { opacity:.5; cursor:wait; }
+  #confirmBar { display:none; padding:0 16px 12px; gap:8px; }
+  .right { display:grid; grid-template-rows: 1fr 280px; gap:16px; min-height:0; }
+  #grid { position:relative; flex:1; margin:8px 16px 16px 56px; min-height:0; }
+  .daycol { position:absolute; top:24px; bottom:0; border-left:1px solid var(--line); }
+  .dayname { position:absolute; top:0; font-size:12px; font-weight:600; color:var(--muted); text-align:center; }
+  .hour { position:absolute; left:-48px; font-size:11px; color:var(--muted); }
+  .hourline { position:absolute; left:0; right:0; border-top:1px dashed #E6E0D4; }
+  .block { position:absolute; border-radius:8px; padding:4px 6px; font-size:11px; line-height:1.25; color:var(--light); overflow:hidden; }
+  .block b { font-size:12px; }
+  #log { flex:1; overflow:auto; padding:10px 16px; font-family:'JetBrains Mono', monospace; font-size:12px; line-height:1.5; }
+  .ev-tool_call { color:var(--teal); }
+  .ev-tool_result { color:var(--muted); }
+  .ev-thinking { color:var(--dark); font-family:Inter, Arial, sans-serif; }
+  .ev-error { color:#B42318; }
+  .status { font-size:12px; color:var(--muted); padding:0 16px 8px; }
+  .empty { color:var(--muted); font-size:14px; padding:24px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>PathFinder</h1><span class="tag">AUB course planner agent · {{ term }}</span>
+  <span class="spacer"></span>
+  <label>Student <select id="student"></select></label>
+  <label>Mode <select id="mode"><option value="llm">LLM agent</option><option value="offline">Offline backup</option></select></label>
+</header>
+<main>
+  <section class="panel">
+    <h2>Chat</h2>
+    <div id="chat"><div class="msg agent">Hi! Tell me what you want next semester: credits, times, and the kind of electives you like.</div></div>
+    <div class="chips">
+      <button class="chip">15 credits, no classes before 9 AM, and one AI-related elective</button>
+      <button class="chip">12 credits, no classes on Friday</button>
+      <button class="chip">What can I take to finish the Systems focus area?</button>
+    </div>
+    <div class="status" id="status"></div>
+    <div id="confirmBar"><button class="primary" id="confirmBtn">Confirm plan and export calendar</button></div>
+    <form id="form"><input type="text" id="input" placeholder="Plan my spring..." autocomplete="off"><button class="primary" id="send">Send</button></form>
+  </section>
+  <div class="right">
+    <section class="panel"><h2>Weekly timetable</h2><div id="grid"><div class="empty">The plan appears here once the validator approves it.</div></div></section>
+    <section class="panel"><h2>Agent log: plan → act → observe → check</h2><div id="log"></div></section>
+  </div>
+</main>
+<script>
+const $ = (id) => document.getElementById(id);
+let conversationId = null;
+const COLORS = ["#0E7C6B", "#0F1E2E", "#B5651D", "#3B5B92", "#7A4E9C", "#2F6F4F"];
+
+async function loadInfo() {
+  const info = await (await fetch("/api/info")).json();
+  for (const s of info.students) $("student").add(new Option(s.name, s.id));
+  if (!info.llm_available) { $("mode").value = "offline"; $("status").textContent = "No API key found: running in offline backup mode."; }
+  $("student").onchange = $("mode").onchange = reset;
+}
+function reset() { conversationId = null; $("log").innerHTML = ""; $("confirmBar").style.display = "none"; }
+
+function esc(t) { return t.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c])); }
+function renderMarkdown(text) {
+  const lines = text.split("\n"); let html = ""; let table = [];
+  const flush = () => { if (!table.length) return;
+    const rows = table.filter(r => !/^\|\s*-/.test(r)).map(r => r.trim().replace(/^\||\|$/g, "").split("|"));
+    html += "<table>" + rows.map((r, i) => "<tr>" + r.map(c => i ? `<td>${esc(c.trim())}</td>` : `<th>${esc(c.trim())}</th>`).join("") + "</tr>").join("") + "</table>";
+    table = []; };
+  for (const line of lines) { if (line.trim().startsWith("|")) { table.push(line); continue; } flush(); html += esc(line).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>") + "\n"; }
+  flush(); return html;
+}
+function addMsg(who, text) { const d = document.createElement("div"); d.className = "msg " + who; d.innerHTML = who === "agent" ? renderMarkdown(text) : esc(text); $("chat").append(d); $("chat").scrollTop = 1e9; }
+
+function addEvents(events) {
+  for (const e of events) {
+    const d = document.createElement("div"); d.className = "ev-" + e.kind;
+    if (e.kind === "tool_call") d.textContent = "→ " + e.name + "(" + JSON.stringify(e.args) + ")";
+    else if (e.kind === "tool_result") { const t = JSON.stringify(e.result); d.textContent = "← " + (t.length > 220 ? t.slice(0, 220) + " …" : t); }
+    else if (e.kind === "thinking") d.textContent = "• " + e.text;
+    else if (e.kind === "error") d.textContent = "! " + e.text;
+    else continue;
+    $("log").append(d);
+  }
+  $("log").scrollTop = 1e9;
+}
+
+function drawGrid(plan) {
+  const grid = $("grid"); grid.innerHTML = "";
+  const days = ["M","T","W","R","F"], names = {M:"Mon",T:"Tue",W:"Wed",R:"Thu",F:"Fri"};
+  const startH = 8, endH = 18, H = grid.clientHeight - 24, W = grid.clientWidth;
+  const y = (t) => { const [h, m] = t.split(":").map(Number); return 24 + ((h + m / 60) - startH) / (endH - startH) * H; };
+  for (let h = startH; h <= endH; h++) {
+    const line = document.createElement("div"); line.className = "hourline"; line.style.top = y(h + ":00") + "px"; grid.append(line);
+    const lab = document.createElement("div"); lab.className = "hour"; lab.style.top = (y(h + ":00") - 7) + "px"; lab.textContent = h + ":00"; grid.append(lab);
+  }
+  days.forEach((d, i) => {
+    const col = document.createElement("div"); col.className = "daycol"; col.style.left = (i * W / 5) + "px"; col.style.width = (W / 5) + "px"; grid.append(col);
+    const n = document.createElement("div"); n.className = "dayname"; n.style.left = (i * W / 5) + "px"; n.style.width = (W / 5) + "px"; n.textContent = names[d]; grid.append(n);
+  });
+  const courses = [...new Set(plan.rows.map(r => r.course))];
+  for (const r of plan.rows) for (const d of r.days) {
+    const i = days.indexOf(d); if (i < 0) continue;
+    const b = document.createElement("div"); b.className = "block";
+    b.style.left = (i * W / 5 + 4) + "px"; b.style.width = (W / 5 - 8) + "px";
+    b.style.top = y(r.start) + "px"; b.style.height = (y(r.end) - y(r.start)) + "px";
+    b.style.background = COLORS[courses.indexOf(r.course) % COLORS.length];
+    b.innerHTML = `<b>${esc(r.course)}${r.type === "lab" ? " lab" : ""}</b><br>${r.start}-${r.end}<br>${esc(r.room)}`;
+    grid.append(b);
+  }
+}
+
+async function send(text) {
+  if (!text) return;
+  addMsg("user", text); $("input").value = ""; $("send").disabled = true; $("status").textContent = "PathFinder is working…";
+  try {
+    const res = await (await fetch("/api/plan", { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message: text, conversation_id: conversationId, student_id: $("student").value, mode: $("mode").value }) })).json();
+    conversationId = res.conversation_id; addEvents(res.events || []); addMsg("agent", res.answer || res.error);
+    if (res.plan) { drawGrid(res.plan); $("confirmBar").style.display = "flex"; }
+    $("status").textContent = res.mode === "offline" ? "Offline backup mode (no LLM)." : "";
+  } catch (e) { addMsg("agent", "Network error: " + e); }
+  $("send").disabled = false;
+}
+
+$("form").onsubmit = (e) => { e.preventDefault(); send($("input").value.trim()); };
+document.querySelectorAll(".chip").forEach(c => c.onclick = () => send(c.textContent));
+$("confirmBtn").onclick = async () => {
+  addMsg("user", "I confirm this plan.");
+  const res = await (await fetch("/api/confirm", { method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ conversation_id: conversationId }) })).json();
+  addEvents(res.events || []); addMsg("agent", res.answer || res.error);
+  if (res.download) { const a = document.createElement("a"); a.href = res.download; a.textContent = "Download your calendar (.ics)"; a.className = "msg agent"; $("chat").append(a); }
+  $("confirmBar").style.display = "none";
+};
+loadInfo();
+</script>
+</body>
+</html>
