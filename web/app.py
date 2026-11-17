@@ -4,11 +4,14 @@
 
 Shows the chat, the live agent log (every tool call), and the weekly timetable.
 """
+import json
+import queue
 import sys
+import threading
 import uuid
 from pathlib import Path
 
-from flask import Flask, jsonify, render_template, request, send_file
+from flask import Flask, Response, jsonify, render_template, request, send_file
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from pathfinder import data, tools as T  # noqa: E402
@@ -18,6 +21,15 @@ from pathfinder.offline import plan_offline  # noqa: E402
 
 app = Flask(__name__)
 CONVERSATIONS = {}  # conversation id -> {"agent" or "session", "mode", "student_id"}
+_LLM = None  # one connection for the whole server: the model is picked once, at the first request
+
+
+def get_llm():
+    global _LLM
+    if _LLM is None:
+        from pathfinder.llm import LLMClient
+        _LLM = LLMClient()
+    return _LLM
 
 
 def plan_rows(session):
@@ -50,14 +62,11 @@ def info():
 
 @app.post("/api/plan")
 def plan():
+    """Runs the agent and STREAMS each step to the page as it happens (one JSON object per line)."""
     body = request.get_json(force=True)
     message = (body.get("message") or "").strip()
     if not message:
         return jsonify({"error": "Empty message"}), 400
-    events = []
-
-    def on_event(kind, payload):
-        events.append({"kind": kind, **payload})
 
     conv_id = body.get("conversation_id")
     conv = CONVERSATIONS.get(conv_id)
@@ -69,23 +78,44 @@ def plan():
         conv = {"mode": mode, "student_id": body.get("student_id", "202300123")}
         CONVERSATIONS[conv_id] = conv
 
-    try:
-        if conv["mode"] == "offline":
-            session, answer = plan_offline(conv["student_id"], message, on_event)
-            conv["session"] = session
-        else:
-            if "agent" not in conv:
-                from pathfinder.llm import LLMClient
-                conv["agent"] = PathFinderAgent(conv["student_id"], LLMClient(), on_event=on_event)
-            agent = conv["agent"]
-            agent.on_event = on_event
-            answer = agent.ask(message)
-            conv["session"] = agent.session
-    except Exception as e:  # show the error in the page instead of crashing
-        return jsonify({"conversation_id": conv_id, "answer": f"Error: {e}", "events": events, "plan": None})
+    events = queue.Queue()
 
-    return jsonify({"conversation_id": conv_id, "mode": conv["mode"], "answer": answer,
-                    "events": events, "plan": plan_rows(conv["session"])})
+    def on_event(kind, payload):
+        events.put({"kind": kind, **payload})
+
+    def work():
+        try:
+            if conv["mode"] == "llm":
+                try:
+                    if "agent" not in conv:
+                        conv["agent"] = PathFinderAgent(conv["student_id"], get_llm(), on_event=on_event)
+                    agent = conv["agent"]
+                    agent.on_event = on_event
+                    answer = agent.ask(message)
+                    conv["session"] = agent.session
+                except Exception as e:  # reliability: the AI failed -> offline planner
+                    on_event("error", {"text": f"AI unavailable ({str(e)[:60]}). Switching to offline backup mode."})
+                    conv["mode"] = "offline"
+                    conv.pop("agent", None)
+            if conv["mode"] == "offline":
+                session, answer = plan_offline(conv["student_id"], message, on_event)
+                conv["session"] = session
+            events.put({"kind": "done", "conversation_id": conv_id, "mode": conv["mode"],
+                        "answer": answer, "plan": plan_rows(conv["session"])})
+        except Exception as e:
+            events.put({"kind": "done", "conversation_id": conv_id, "mode": conv["mode"],
+                        "answer": f"Error: {e}", "plan": None})
+
+    threading.Thread(target=work, daemon=True).start()
+
+    def stream():
+        while True:
+            ev = events.get()
+            yield json.dumps(ev, ensure_ascii=False) + "\n"
+            if ev["kind"] == "done":
+                break
+
+    return Response(stream(), mimetype="application/x-ndjson")
 
 
 @app.post("/api/confirm")
@@ -109,7 +139,12 @@ def confirm():
     else:
         agent = conv["agent"]
         agent.on_event = on_event
-        answer = agent.confirm()
+        try:
+            answer = agent.confirm()
+        except Exception as e:  # the AI failed: export directly, the plan is already validated
+            agent.session.student_confirmed = True
+            T.run_tool(agent.session, "export_calendar", {})
+            answer = f"Your plan is saved to your calendar file. (AI note skipped: {str(e)[:40]})"
         session = agent.session
     return jsonify({"answer": answer, "events": events,
                     "download": f"/download/{session.student_id}" if session.export_path else None})
@@ -125,4 +160,4 @@ def download(student_id):
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    app.run(debug=True, port=5000, threaded=True)

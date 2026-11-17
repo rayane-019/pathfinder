@@ -32,13 +32,13 @@
   button.primary { background:var(--teal); color:var(--light); border:none; border-radius:8px; padding:10px 14px; font-weight:600; cursor:pointer; }
   button.primary:disabled { opacity:.5; cursor:wait; }
   #confirmBar { display:none; padding:0 16px 12px; gap:8px; }
-  .right { display:grid; grid-template-rows: 1fr 280px; gap:16px; min-height:0; }
-  #grid { position:relative; flex:1; margin:8px 16px 16px 56px; min-height:0; }
+  .right { display:grid; grid-template-rows: minmax(0, 3fr) minmax(0, 2fr); gap:16px; min-height:0; }
+  #grid { position:relative; flex:1; margin:8px 16px 12px 56px; min-height:0; }
   .daycol { position:absolute; top:24px; bottom:0; border-left:1px solid var(--line); }
   .dayname { position:absolute; top:0; font-size:12px; font-weight:600; color:var(--muted); text-align:center; }
   .hour { position:absolute; left:-48px; font-size:11px; color:var(--muted); }
   .hourline { position:absolute; left:0; right:0; border-top:1px dashed #E6E0D4; }
-  .block { position:absolute; border-radius:8px; padding:4px 6px; font-size:11px; line-height:1.25; color:var(--light); overflow:hidden; }
+  .block { position:absolute; border-radius:6px; padding:2px 6px; font-size:11px; line-height:1.2; color:var(--light); overflow:hidden; }
   .block b { font-size:12px; }
   #log { flex:1; overflow:auto; padding:10px 16px; font-family:'JetBrains Mono', monospace; font-size:12px; line-height:1.5; }
   .ev-tool_call { color:var(--teal); }
@@ -88,13 +88,14 @@ async function loadInfo() {
 function reset() { conversationId = null; $("log").innerHTML = ""; $("confirmBar").style.display = "none"; }
 
 function esc(t) { return t.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c])); }
+function inline(t) { return esc(t).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace(/\*(.+?)\*/g, "<i>$1</i>"); }
 function renderMarkdown(text) {
   const lines = text.split("\n"); let html = ""; let table = [];
   const flush = () => { if (!table.length) return;
-    const rows = table.filter(r => !/^\|\s*-/.test(r)).map(r => r.trim().replace(/^\||\|$/g, "").split("|"));
-    html += "<table>" + rows.map((r, i) => "<tr>" + r.map(c => i ? `<td>${esc(c.trim())}</td>` : `<th>${esc(c.trim())}</th>`).join("") + "</tr>").join("") + "</table>";
+    const rows = table.filter(r => !/^[\s|:\-]+$/.test(r)).map(r => r.trim().replace(/^\||\|$/g, "").split("|"));
+    html += "<table>" + rows.map((r, i) => "<tr>" + r.map(c => i ? `<td>${inline(c.trim())}</td>` : `<th>${inline(c.trim())}</th>`).join("") + "</tr>").join("") + "</table>";
     table = []; };
-  for (const line of lines) { if (line.trim().startsWith("|")) { table.push(line); continue; } flush(); html += esc(line).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>") + "\n"; }
+  for (const line of lines) { if (line.trim().startsWith("|")) { table.push(line); continue; } flush(); html += inline(line.replace(/^\s*\*\s+/, "• ")) + "\n"; }
   flush(); return html;
 }
 function addMsg(who, text) { const d = document.createElement("div"); d.className = "msg " + who; d.innerHTML = who === "agent" ? renderMarkdown(text) : esc(text); $("chat").append(d); $("chat").scrollTop = 1e9; }
@@ -112,41 +113,70 @@ function addEvents(events) {
   $("log").scrollTop = 1e9;
 }
 
+let lastPlan = null;
 function drawGrid(plan) {
+  lastPlan = plan;
   const grid = $("grid"); grid.innerHTML = "";
   const days = ["M","T","W","R","F"], names = {M:"Mon",T:"Tue",W:"Wed",R:"Thu",F:"Fri"};
-  const startH = 8, endH = 18, H = grid.clientHeight - 24, W = grid.clientWidth;
-  const y = (t) => { const [h, m] = t.split(":").map(Number); return 24 + ((h + m / 60) - startH) / (endH - startH) * H; };
+  const toH = (t) => { const [h, m] = t.split(":").map(Number); return h + m / 60; };
+  // Only show the hours the plan uses (more space for each class)
+  let startH = Math.floor(Math.min(...plan.rows.map(r => toH(r.start))));
+  let endH = Math.ceil(Math.max(...plan.rows.map(r => toH(r.end))));
+  if (endH - startH < 6) endH = startH + 6;
+  const top = 22, H = grid.clientHeight - top, W = grid.clientWidth;
+  const y = (t) => top + (toH(t) - startH) / (endH - startH) * H;
   for (let h = startH; h <= endH; h++) {
     const line = document.createElement("div"); line.className = "hourline"; line.style.top = y(h + ":00") + "px"; grid.append(line);
     const lab = document.createElement("div"); lab.className = "hour"; lab.style.top = (y(h + ":00") - 7) + "px"; lab.textContent = h + ":00"; grid.append(lab);
   }
   days.forEach((d, i) => {
-    const col = document.createElement("div"); col.className = "daycol"; col.style.left = (i * W / 5) + "px"; col.style.width = (W / 5) + "px"; grid.append(col);
+    const col = document.createElement("div"); col.className = "daycol"; col.style.top = top + "px"; col.style.left = (i * W / 5) + "px"; col.style.width = (W / 5) + "px"; grid.append(col);
     const n = document.createElement("div"); n.className = "dayname"; n.style.left = (i * W / 5) + "px"; n.style.width = (W / 5) + "px"; n.textContent = names[d]; grid.append(n);
   });
   const courses = [...new Set(plan.rows.map(r => r.course))];
   for (const r of plan.rows) for (const d of r.days) {
     const i = days.indexOf(d); if (i < 0) continue;
     const b = document.createElement("div"); b.className = "block";
-    b.style.left = (i * W / 5 + 4) + "px"; b.style.width = (W / 5 - 8) + "px";
-    b.style.top = y(r.start) + "px"; b.style.height = (y(r.end) - y(r.start)) + "px";
+    const h = y(r.end) - y(r.start) - 2;
+    b.style.left = (i * W / 5 + 3) + "px"; b.style.width = (W / 5 - 6) + "px";
+    b.style.top = (y(r.start) + 1) + "px"; b.style.height = h + "px";
     b.style.background = COLORS[courses.indexOf(r.course) % COLORS.length];
-    b.innerHTML = `<b>${esc(r.course)}${r.type === "lab" ? " lab" : ""}</b><br>${r.start}-${r.end}<br>${esc(r.room)}`;
+    const name = `<b>${esc(r.course)}${r.type === "lab" ? " lab" : ""}</b>`;
+    // Short box: one line. Taller box: time and room on their own lines.
+    b.innerHTML = h < 30 ? `${name} ${r.start}-${r.end}` : h < 44 ? `${name}<br>${r.start}-${r.end}` : `${name}<br>${r.start}-${r.end}<br>${esc(r.room)}`;
+    b.title = `${r.course} ${r.title} | ${r.start}-${r.end} | ${r.room}`;
     grid.append(b);
   }
 }
+window.addEventListener("resize", () => { if (lastPlan) drawGrid(lastPlan); });
 
 async function send(text) {
   if (!text) return;
-  addMsg("user", text); $("input").value = ""; $("send").disabled = true; $("status").textContent = "PathFinder is working…";
+  addMsg("user", text); $("input").value = ""; $("send").disabled = true;
+  let steps = 0; const t0 = Date.now();
+  const status = () => { $("status").textContent = `PathFinder is working… ${steps} steps, ${Math.round((Date.now() - t0) / 1000)} s`; };
+  status(); const timer = setInterval(status, 1000);
   try {
-    const res = await (await fetch("/api/plan", { method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: text, conversation_id: conversationId, student_id: $("student").value, mode: $("mode").value }) })).json();
-    conversationId = res.conversation_id; addEvents(res.events || []); addMsg("agent", res.answer || res.error);
-    if (res.plan) { drawGrid(res.plan); $("confirmBar").style.display = "flex"; }
-    $("status").textContent = res.mode === "offline" ? "Offline backup mode (no LLM)." : "";
+    const res = await fetch("/api/plan", { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message: text, conversation_id: conversationId, student_id: $("student").value, mode: $("mode").value }) });
+    const reader = res.body.getReader(); const decoder = new TextDecoder(); let buffer = "";
+    while (true) {
+      const { value, done } = await reader.read(); if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+      const lines = buffer.split("\n"); buffer = lines.pop();
+      for (const line of lines) {
+        if (!line.trim()) continue;
+        const ev = JSON.parse(line);
+        if (ev.kind === "done") {
+          conversationId = ev.conversation_id; addMsg("agent", ev.answer);
+          if (ev.plan) { drawGrid(ev.plan); $("confirmBar").style.display = "flex"; }
+          if (ev.mode === "offline") $("mode").value = "offline";
+        } else { if (ev.kind === "tool_call") steps++; addEvents([ev]); }
+      }
+    }
   } catch (e) { addMsg("agent", "Network error: " + e); }
+  clearInterval(timer);
+  $("status").textContent = $("mode").value === "offline" ? "Offline backup mode (no LLM)." : `Done in ${steps} steps, ${Math.round((Date.now() - t0) / 1000)} s.`;
   $("send").disabled = false;
 }
 
