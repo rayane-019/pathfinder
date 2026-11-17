@@ -84,15 +84,22 @@ class PathFinderAgent:
             message = self.llm.chat(self.messages, T.TOOL_SCHEMAS)
             tool_calls = getattr(message, "tool_calls", None) or []
 
-            # Save the model's turn in the conversation history (its memory).
-            entry = {"role": "assistant", "content": message.content or ""}
-            if tool_calls:
-                entry["tool_calls"] = [{"id": tc.id, "type": "function",
-                                        "function": {"name": tc.function.name,
-                                                     "arguments": tc.function.arguments}}
-                                       for tc in tool_calls]
-            self.messages.append(entry)
 
+            # Save the model's turn in the conversation history (its memory).
+            # We keep the WHOLE message: Gemini 3 adds a hidden "thought_signature"
+            # to each tool call and returns a 400 error if we don't send it back.
+            if hasattr(message, "model_dump"):
+                entry = message.model_dump(exclude_none=True)
+                entry["role"] = "assistant"
+                entry.setdefault("content", "")
+            else:  # the FakeLLM in the tests
+                entry = {"role": "assistant", "content": message.content or ""}
+                if tool_calls:
+                    entry["tool_calls"] = [{"id": tc.id, "type": "function",
+                                            "function": {"name": tc.function.name,
+                                                         "arguments": tc.function.arguments}}
+                                           for tc in tool_calls]
+            self.messages.append(entry)
             if not tool_calls:  # no tool to call: this is the answer to the student
                 self.on_event("final", {"text": message.content or "", "step": step})
                 return message.content or ""
