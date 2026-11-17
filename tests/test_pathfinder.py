@@ -36,6 +36,16 @@ def test_search_ai_electives_excludes_269():
     assert "CMPS 261" in codes and "CMPS 269" not in codes and "CMPS 260" not in codes
 
 
+def test_cs_major_cannot_take_ai_for_everyone():
+    r = prereqs.check(data.students()[JUNIOR], "CMPS 260")
+    assert not r["allowed"] and "not open to Computer Science" in r["reason"]
+
+
+def test_capstone_needs_senior_standing_and_consent():
+    r = prereqs.check(data.students()[JUNIOR], "CMPS 299")
+    assert not r["allowed"] and "senior" in r["reason"] and "consent" in r["reason"]
+
+
 # ---------- Ghina: validator and calendar ----------
 def test_validator_accepts_good_plan():
     report = validator.validate_plan(data.students()[JUNIOR], GOOD_PLAN, {"earliest_start": "09:00"})

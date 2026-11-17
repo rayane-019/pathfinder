@@ -23,7 +23,7 @@
     {"code": "CMPS 244", "title": "Database Systems", "credits": 3, "prereq": {"any": [{"course": "CMPS 202", "min_grade": "C+"}, {"course": "CMPS 203", "min_grade": "C+"}]}, "tags": ["data", "databases"], "counts_as_cmps_elective": true, "focus_areas": ["systems", "ai_data", "software"]},
     {"code": "CMPS 251", "title": "Numerical Computing", "credits": 3, "prereq": {"all": [{"any": [{"course": "CMPS 201", "min_grade": "C+"}, {"course": "EECE 230", "min_grade": "C+"}]}, "MATH 201"]}, "tags": ["math", "scientific"], "counts_as_cmps_elective": true, "focus_areas": []},
     {"code": "CMPS 254", "title": "Numerical Linear Algebra", "credits": 3, "prereq": {"any": ["MATH 218", "MATH 219"]}, "coreq": ["CMPS 251"], "tags": ["math", "scientific"], "counts_as_cmps_elective": true, "focus_areas": []},
-    {"code": "CMPS 260", "title": "AI for Everyone", "credits": 3, "prereq": {"any": ["CMPS 201", "CMPS 203"]}, "tags": ["ai"], "counts_as_cmps_elective": false, "note": "Does not count as a CMPS elective or technical elective for CS majors.", "focus_areas": []},
+    {"code": "CMPS 260", "title": "AI for Everyone", "credits": 3, "prereq": {"any": ["CMPS 201", "CMPS 203"]}, "tags": ["ai"], "counts_as_cmps_elective": false, "not_open_to_majors": ["Computer Science"], "note": "Not open to computer science majors (AUB catalogue 2025-26).", "focus_areas": []},
     {"code": "CMPS 261", "title": "Machine Learning", "credits": 3,
      "prereq": {"all": [{"any": [{"course": "CMPS 201", "min_grade": "C+"}, {"course": "CMPS 203", "min_grade": "C+"}, {"course": "EECE 230", "min_grade": "C+"}]}, {"any": ["BUSS 200", "STAT 201", "STAT 210", "STAT 230", "STAT 233", "EDUC 227", "ECON 213", "NURS 203"]}, {"any": ["MATH 218", "MATH 219"]}]},
      "tags": ["ai", "data"], "counts_as_cmps_elective": true, "focus_areas": ["ai_data"]},
@@ -35,8 +35,11 @@
     {"code": "CMPS 271", "title": "Software Engineering", "credits": 3, "prereq": {"any": [{"course": "CMPS 202", "min_grade": "C+"}, {"course": "EECE 330", "min_grade": "C+"}]}, "tags": ["software"], "counts_as_cmps_elective": true, "focus_areas": []},
     {"code": "CMPS 278", "title": "Web Programming and Design", "credits": 3, "prereq": {"any": [{"course": "CMPS 202", "min_grade": "C+"}, {"course": "EECE 330", "min_grade": "C+"}]}, "tags": ["software", "web"], "counts_as_cmps_elective": true, "focus_areas": ["software"]},
     {"code": "CMPS 279", "title": "Mobile Application Development", "credits": 3, "prereq": {"any": [{"course": "CMPS 202", "min_grade": "C+"}, {"course": "EECE 330", "min_grade": "C+"}]}, "tags": ["software", "mobile"], "counts_as_cmps_elective": true, "focus_areas": ["software"]},
+    {"code": "CMPS 280", "title": "Digital Media Programming", "credits": 3, "prereq": {"course": "CMPS 201", "min_grade": "C+"}, "tags": ["programming", "media", "graphics"], "counts_as_cmps_elective": true, "focus_areas": []},
     {"code": "CMPS 285", "title": "Computer Graphics", "credits": 3, "prereq": {"any": [{"course": "CMPS 202", "min_grade": "C+"}, {"course": "EECE 330", "min_grade": "C+"}]}, "tags": ["graphics"], "counts_as_cmps_elective": true, "focus_areas": []},
+    {"code": "CMPS 286", "title": "Computer-Aided Geometric Design", "credits": 3, "prereq": "CMPS 285", "note": "Offered every two years.", "tags": ["graphics", "math"], "counts_as_cmps_elective": true, "focus_areas": []},
     {"code": "CMPS 288", "title": "Game Programming", "credits": 3, "prereq": {"any": [{"course": "CMPS 202", "min_grade": "C+"}, {"course": "EECE 330", "min_grade": "C+"}]}, "tags": ["software", "games", "graphics"], "counts_as_cmps_elective": true, "focus_areas": ["software"]},
-    {"code": "CMPS 289", "title": "Human Computer Interaction", "credits": 3, "prereq": "CMPS 271", "tags": ["software", "design"], "counts_as_cmps_elective": true, "focus_areas": []}
+    {"code": "CMPS 289", "title": "Human Computer Interaction", "credits": 3, "prereq": "CMPS 271", "tags": ["software", "design"], "counts_as_cmps_elective": true, "focus_areas": []},
+    {"code": "CMPS 299", "title": "Capstone Project", "credits": 3, "prereq": {"all": [{"standing": "senior"}, {"consent": "instructor"}]}, "note": "Also offered as CMPS 299A (1 cr.) then CMPS 299B (2 cr.).", "tags": ["software", "project"], "counts_as_cmps_elective": true, "focus_areas": []}
   ]
 }
