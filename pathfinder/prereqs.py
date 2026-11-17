@@ -6,6 +6,8 @@ A prerequisite in courses.json is written as a small tree:
   {"any": [ ... ]}                          -> at least one of the items
   {"all": [ ... ]}                          -> every item
   {"standing": "senior"}                    -> class standing (from credits earned)
+  {"consent": "instructor"}                 -> needs a human's approval, so never auto-passes
+A course can also list "not_open_to_majors" (e.g. CMPS 260 is closed to CS majors).
 This file walks that tree and explains, in plain English, why it passes or fails.
 """
 from . import data
@@ -54,6 +56,8 @@ def _eval(node, grades, standing, planned):
         if order.index(standing) >= order.index(need):
             return True, f"{standing} standing"
         return False, f"needs {need} standing (student is {standing})"
+    if "consent" in node:
+        return False, f"needs consent of the {node['consent']} (ask the department)"
     if "any" in node:
         results = [_eval(n, grades, standing, planned) for n in node["any"]]
         for ok, why in results:
@@ -74,6 +78,9 @@ def check(student, course_code, planned_codes=()):
     course = data.courses().get(course_code)
     if course is None:
         return {"course": course_code, "allowed": False, "reason": "course not found in the AUB data"}
+    if student.get("major") in course.get("not_open_to_majors", []):
+        return {"course": course_code, "allowed": False,
+                "reason": f"not open to {student['major']} majors (AUB catalogue)"}
     grades = _grades(student)
     repeat_min = data.rules().get("repeat_if_below", {}).get(course_code)
     if course_code in grades and repeat_min and not grade_ok(grades[course_code], repeat_min):
