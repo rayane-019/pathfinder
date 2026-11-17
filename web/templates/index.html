@@ -141,7 +141,7 @@ function drawGrid(plan) {
     b.style.left = (i * W / 5 + 3) + "px"; b.style.width = (W / 5 - 6) + "px";
     b.style.top = (y(r.start) + 1) + "px"; b.style.height = h + "px";
     b.style.background = COLORS[courses.indexOf(r.course) % COLORS.length];
-    const name = `<b>${esc(r.course)}${r.type === "lab" ? " lab" : ""}</b>`;
+    const name = `<b>${esc(r.course)}${r.type === "lab" ? " lab" : r.type === "recitation" ? " rec." : ""}</b>`;
     // Short box: one line. Taller box: time and room on their own lines.
     b.innerHTML = h < 30 ? `${name} ${r.start}-${r.end}` : h < 44 ? `${name}<br>${r.start}-${r.end}` : `${name}<br>${r.start}-${r.end}<br>${esc(r.room)}`;
     b.title = `${r.course} ${r.title} | ${r.start}-${r.end} | ${r.room}`;

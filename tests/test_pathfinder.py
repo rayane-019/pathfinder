@@ -7,7 +7,7 @@ from pathfinder.agent import PathFinderAgent
 from pathfinder.offline import plan_offline, parse_request
 
 JUNIOR, SOPHOMORE = "202300123", "202400456"
-GOOD_PLAN = ["21049", "21070", "21168", "21133", "21140"]
+GOOD_PLAN = ["20880", "20886", "20904", "20900+20899", "20893"]
 
 
 # ---------- Lana: data and prerequisites ----------
@@ -54,11 +54,11 @@ def test_validator_accepts_good_plan():
 
 
 def test_validator_catches_conflict_full_and_early():
-    bad = ["21049", "21126", "21161", "21063"]  # 215s2+261s1 clash, 271s1 full, 240s1 at 8:00
-    report = validator.validate_plan(data.students()[JUNIOR], bad, {"earliest_start": "09:00"})
+    bad = ["20881", "20893", "20907"]  # 215s2 full + clashes with 244s1 (MW 12:30); 271s4 starts at 9:00
+    report = validator.validate_plan(data.students()[JUNIOR], bad, {"earliest_start": "10:00"})
     text = " ".join(report["errors"])
     assert not report["valid"]
-    assert "Time conflict" in text and "full" in text and "before 09:00" in text
+    assert "Time conflict" in text and "full" in text and "before 10:00" in text
 
 
 def test_validator_rejects_invented_crn():
@@ -102,7 +102,7 @@ def _call(name, args, i):
 def test_agent_loop_fixes_validator_errors():
     script = [
         NS(content="Loading the record.", tool_calls=[_call("get_student_record", {}, 1)]),
-        NS(content=None, tool_calls=[_call("submit_plan", {"crns": ["21049", "21126"], "explanation": "x"}, 2)]),
+        NS(content=None, tool_calls=[_call("submit_plan", {"crns": ["20881", "20893"], "explanation": "x"}, 2)]),
         NS(content="Conflict, switching section.", tool_calls=[_call("submit_plan", {"crns": GOOD_PLAN, "explanation": "x"}, 3)]),
         NS(content="Here is your plan. Do you confirm this plan?", tool_calls=None),
     ]

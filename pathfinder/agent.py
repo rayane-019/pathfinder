@@ -7,6 +7,7 @@ Our code runs the tool and gives the result back.
 The loop stops when the model answers without calling a tool, or after MAX_STEPS.
 """
 import json
+import time
 
 from . import tools as T
 
@@ -21,6 +22,9 @@ How AUB works (use these words):
 - Many CMPS courses need at least a C+ in CMPS 202 (or CMPS 201). The tools check this.
 - CMPS 260 and CMPS 269 do NOT count as CMPS electives for CS majors.
 - CS majors can claim focus areas: Systems, AI and Data Science, Software Engineering.
+- Students also need General Education (GE) courses: English (2), Arabic (1), Humanities (4, at least 2 from
+  List I), Social Sciences (2, at least 1 from List I), Natural Sciences (2), Quantitative Thought (1).
+  Use check_ge_progress to see what is missing, and search_courses with ge_area to find GE courses.
 
 Your method:
 1. Call get_student_record first.
@@ -33,11 +37,18 @@ Your method:
    explain each choice in one simple sentence, mention any warnings, and ask: "Do you confirm this plan?"
 7. Call export_calendar ONLY after the student says they confirm.
 
+Work fast:
+- When several tool calls do not depend on each other (for example find_sections for 4 courses),
+  request them all in the SAME turn instead of one per turn.
+- Prefer courses where has_open_seats is true.
+
 Rules:
 - Only use courses and sections returned by the tools. Never invent a course, CRN, time or rule.
 - You never register the student. You only plan; the student registers on AUBsis.
 - If something is impossible (for example no section fits), say so and offer the closest option.
 - Stay on course planning. Politely decline unrelated requests.
+- The data covers CMPS courses and a list of GE courses. If the student asks for another department's major
+  courses (for example CCE or CSE), say clearly that this prototype does not have them yet, then plan the rest.
 - Use short, simple English."""
 
 
@@ -79,11 +90,23 @@ class PathFinderAgent:
         self.session.student_confirmed = True
         return self.ask("I confirm this plan. Please export it to my calendar.")
 
+    def _chat_with_patience(self, tries=3, wait=20):
+        """Calls the model. If Google says 'too many requests' (429), wait and try again."""
+        for attempt in range(1, tries + 1):
+            try:
+                return self.llm.chat(self.messages, T.TOOL_SCHEMAS)
+            except Exception as e:
+                busy = "429" in str(e) or "503" in str(e) or "RESOURCE_EXHAUSTED" in str(e)
+                if not busy or attempt == tries:
+                    raise
+                self.on_event("thinking", {"text": f"The AI service is busy (free plan limit). "
+                                                   f"Waiting {wait} s, then continuing (try {attempt + 1}/{tries})."})
+                time.sleep(wait)
+
     def _loop(self):
         for step in range(1, self.max_steps + 1):
-            message = self.llm.chat(self.messages, T.TOOL_SCHEMAS)
+            message = self._chat_with_patience()
             tool_calls = getattr(message, "tool_calls", None) or []
-
 
             # Save the model's turn in the conversation history (its memory).
             # We keep the WHOLE message: Gemini 3 adds a hidden "thought_signature"
@@ -100,6 +123,10 @@ class PathFinderAgent:
                                                          "arguments": tc.function.arguments}}
                                            for tc in tool_calls]
             self.messages.append(entry)
+
+            if not tool_calls and not (message.content or "").strip():
+                message.content = ("Sorry, I couldn't complete that. Try asking for CMPS or GE courses, "
+                                   "credits or times.")
             if not tool_calls:  # no tool to call: this is the answer to the student
                 self.on_event("final", {"text": message.content or "", "step": step})
                 return message.content or ""

@@ -1,0 +1,4070 @@
+{
+ "term": "Spring 2026-27",
+ "source": "AUBsis Browse Classes, Spring 2026-2027, copied on 17 Nov 2026. Seats change every day.",
+ "sections": [
+  {
+   "crn": "20042",
+   "course": "AGSC 212",
+   "section": "1",
+   "instructor": "Chalak, Ali",
+   "seats_open": 5,
+   "capacity": 40,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "14:00",
+     "end": "14:50",
+     "room": "Agriculture &Food Sciences Blg 205"
+    },
+    {
+     "type": "lecture",
+     "days": "M",
+     "start": "15:00",
+     "end": "15:50",
+     "room": "Agriculture &Food Sciences Blg 205"
+    }
+   ]
+  },
+  {
+   "crn": "20092",
+   "course": "AMST 265I",
+   "section": "1",
+   "instructor": "Al Rammal, Rayane",
+   "seats_open": 3,
+   "capacity": 5,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Nicely Hall 410"
+    }
+   ]
+  },
+  {
+   "crn": "20094",
+   "course": "AMST 275AO",
+   "section": "1",
+   "instructor": "Harb, Sirene",
+   "seats_open": 0,
+   "capacity": 5,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Nicely Hall 412"
+    }
+   ]
+  },
+  {
+   "crn": "23487",
+   "course": "AMST 275AO",
+   "section": "2",
+   "instructor": "Harb, Sirene",
+   "seats_open": 1,
+   "capacity": 5,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "08:00",
+     "end": "09:15",
+     "room": "Nicely Hall 202"
+    }
+   ]
+  },
+  {
+   "crn": "20096",
+   "course": "AMST 275BD",
+   "section": "1",
+   "instructor": "Staff",
+   "seats_open": 0,
+   "capacity": 12,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Nicely Hall 209"
+    }
+   ]
+  },
+  {
+   "crn": "20097",
+   "course": "AMST 275BE",
+   "section": "1",
+   "instructor": "Staff",
+   "seats_open": 0,
+   "capacity": 12,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Nicely Hall 209"
+    }
+   ]
+  },
+  {
+   "crn": "20099",
+   "course": "AMST 276Y",
+   "section": "1",
+   "instructor": "Harb, Sirene",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "09:00",
+     "end": "09:50",
+     "room": "Fisk Hall 342"
+    }
+   ]
+  },
+  {
+   "crn": "23456",
+   "course": "AMST 276Z",
+   "section": "1",
+   "instructor": "Staff",
+   "seats_open": 1,
+   "capacity": 5,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Post Hall 207"
+    }
+   ]
+  },
+  {
+   "crn": "20145",
+   "course": "ARAB 251P",
+   "section": "1",
+   "instructor": "Abboud, Hosn",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "08:00",
+     "end": "09:15",
+     "room": "Nicely Hall 322"
+    }
+   ]
+  },
+  {
+   "crn": "20201",
+   "course": "ARCH 432",
+   "section": "1",
+   "instructor": "Fawaz, Mona",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "T",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Dar AlHandasah Shair&P Arch B. 106"
+    },
+    {
+     "type": "lecture",
+     "days": "R",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Ray Irani Oxy Eng'g Complex 202"
+    }
+   ]
+  },
+  {
+   "crn": "20200",
+   "course": "ARCH 432",
+   "section": "2",
+   "instructor": "Fawaz, Mona",
+   "seats_open": 13,
+   "capacity": 32,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "T",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Dar AlHandasah Shair&P Arch B. 106"
+    },
+    {
+     "type": "lecture",
+     "days": "R",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Ray Irani Oxy Eng'g Complex 217"
+    }
+   ]
+  },
+  {
+   "crn": "20076",
+   "course": "AHIS 282",
+   "section": "1",
+   "instructor": "Saadawi, Ghalya",
+   "seats_open": 0,
+   "capacity": 12,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Nicely Hall 406"
+    }
+   ]
+  },
+  {
+   "crn": "23378",
+   "course": "CHLA 204B",
+   "section": "1",
+   "instructor": "Middlemiss Sanazaro, Marie Claire",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "17:00",
+     "end": "18:15",
+     "room": "Nicely Hall 411"
+    }
+   ]
+  },
+  {
+   "crn": "23379",
+   "course": "CHLA 204B",
+   "section": "2",
+   "instructor": "Middlemiss Sanazaro, Marie Claire",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Nicely Hall 318"
+    }
+   ]
+  },
+  {
+   "crn": "20716",
+   "course": "CHLA 209C",
+   "section": "1",
+   "instructor": "Raya, Iyad",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "17:00",
+     "end": "18:15",
+     "room": "Nicely Hall 102"
+    }
+   ]
+  },
+  {
+   "crn": "20717",
+   "course": "CHLA 209C",
+   "section": "2",
+   "instructor": "Raya, Iyad",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Nicely Hall 324"
+    }
+   ]
+  },
+  {
+   "crn": "20718",
+   "course": "CHLA 210B",
+   "section": "1",
+   "instructor": "Gonzalez, Maya Andrea",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "17:00",
+     "end": "18:15",
+     "room": "Nicely Hall 410"
+    }
+   ]
+  },
+  {
+   "crn": "20719",
+   "course": "CHLA 210D",
+   "section": "1",
+   "instructor": "Harb, Sirene",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "09:00",
+     "end": "09:50",
+     "room": "Fisk Hall 342"
+    }
+   ]
+  },
+  {
+   "crn": "23481",
+   "course": "CHLA 210D",
+   "section": "2",
+   "instructor": "Harb, Sirene",
+   "seats_open": 22,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Nicely Hall 105"
+    }
+   ]
+  },
+  {
+   "crn": "20720",
+   "course": "CHLA 210G",
+   "section": "1",
+   "instructor": "Raya, Iyad",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "08:00",
+     "end": "09:15",
+     "room": "Nicely Hall 102"
+    }
+   ]
+  },
+  {
+   "crn": "20721",
+   "course": "CHLA 210G",
+   "section": "2",
+   "instructor": "Raya, Iyad",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Nicely Hall 324"
+    }
+   ]
+  },
+  {
+   "crn": "20735",
+   "course": "CHLA 295B",
+   "section": "1",
+   "instructor": "Bou Ali, Nadia",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Nicely Hall 327"
+    }
+   ]
+  },
+  {
+   "crn": "20737",
+   "course": "CHLA 295C",
+   "section": "1",
+   "instructor": "Gonzalez, Maya Andrea",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Nicely Hall 410"
+    }
+   ]
+  },
+  {
+   "crn": "21098",
+   "course": "ECON 237",
+   "section": "1",
+   "instructor": "Abboud, Ali",
+   "seats_open": 18,
+   "capacity": 25,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Nicely Hall 414"
+    }
+   ]
+  },
+  {
+   "crn": "21101",
+   "course": "ECON 290D",
+   "section": "1",
+   "instructor": "Staff",
+   "seats_open": 0,
+   "capacity": 25,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "17:00",
+     "end": "18:15",
+     "room": "Nicely Hall 324"
+    }
+   ]
+  },
+  {
+   "crn": "21559",
+   "course": "ENGL 209",
+   "section": "1",
+   "instructor": "Harb, Sirene",
+   "seats_open": 5,
+   "capacity": 18,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Nicely Hall 412"
+    }
+   ]
+  },
+  {
+   "crn": "23486",
+   "course": "ENGL 209",
+   "section": "2",
+   "instructor": "Harb, Sirene",
+   "seats_open": 17,
+   "capacity": 18,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "08:00",
+     "end": "09:15",
+     "room": "Nicely Hall 202"
+    }
+   ]
+  },
+  {
+   "crn": "23368",
+   "course": "ENGL 222A",
+   "section": "1",
+   "instructor": "Staff",
+   "seats_open": 0,
+   "capacity": 12,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Nicely Hall 209"
+    }
+   ]
+  },
+  {
+   "crn": "23374",
+   "course": "ENGL 241A",
+   "section": "1",
+   "instructor": "Staff",
+   "seats_open": 0,
+   "capacity": 12,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Nicely Hall 209"
+    }
+   ]
+  },
+  {
+   "crn": "21575",
+   "course": "ENGL 244R",
+   "section": "1",
+   "instructor": "Morcos, Hiba",
+   "seats_open": 2,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "08:00",
+     "end": "09:15",
+     "room": "Fisk Hall 324"
+    }
+   ]
+  },
+  {
+   "crn": "21830",
+   "course": "HIST 278G",
+   "section": "1",
+   "instructor": "Staff",
+   "seats_open": 0,
+   "capacity": 20,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Post Hall 207"
+    }
+   ]
+  },
+  {
+   "crn": "22163",
+   "course": "MCOM 219A",
+   "section": "1",
+   "instructor": "Bzeih, Bachar",
+   "seats_open": 0,
+   "capacity": 18,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 321"
+    }
+   ]
+  },
+  {
+   "crn": "22164",
+   "course": "MCOM 221",
+   "section": "1",
+   "instructor": "Hamdar, Sarah",
+   "seats_open": 10,
+   "capacity": 18,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Nicely Hall 324"
+    }
+   ]
+  },
+  {
+   "crn": "22166",
+   "course": "MCOM 227",
+   "section": "1",
+   "instructor": "Farine, Anais Marie",
+   "seats_open": 2,
+   "capacity": 18,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 206"
+    }
+   ]
+  },
+  {
+   "crn": "22691",
+   "course": "PHIL 202A",
+   "section": "1",
+   "instructor": "Barakat, Karim",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Fisk Hall 312"
+    }
+   ]
+  },
+  {
+   "crn": "23081",
+   "course": "SOAN 201",
+   "section": "1",
+   "instructor": "Kassir, Alexandra",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Nicely Hall 417"
+    }
+   ]
+  },
+  {
+   "crn": "23082",
+   "course": "SOAN 201",
+   "section": "2",
+   "instructor": "Rassi, Rima",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Nicely Hall 417"
+    }
+   ]
+  },
+  {
+   "crn": "23083",
+   "course": "SOAN 201",
+   "section": "3",
+   "instructor": "Rassi, Rima",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Nicely Hall 327"
+    }
+   ]
+  },
+  {
+   "crn": "23084",
+   "course": "SOAN 201",
+   "section": "4",
+   "instructor": "Fathallah, Zeina",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "10:00",
+     "end": "10:50",
+     "room": "Nicely Hall 206"
+    }
+   ]
+  },
+  {
+   "crn": "23085",
+   "course": "SOAN 201",
+   "section": "5",
+   "instructor": "Fathallah, Zeina",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "08:00",
+     "end": "08:50",
+     "room": "Nicely Hall 206"
+    }
+   ]
+  },
+  {
+   "crn": "23086",
+   "course": "SOAN 201",
+   "section": "6",
+   "instructor": "Fathallah, Zeina",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "09:00",
+     "end": "09:50",
+     "room": "Nicely Hall 206"
+    }
+   ]
+  },
+  {
+   "crn": "23087",
+   "course": "SOAN 201",
+   "section": "7",
+   "instructor": "Fathallah, Zeina",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "08:00",
+     "end": "09:15",
+     "room": "Nicely Hall 206"
+    }
+   ]
+  },
+  {
+   "crn": "23088",
+   "course": "SOAN 201",
+   "section": "8",
+   "instructor": "Rassi, Rima",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Nicely Hall 412"
+    }
+   ]
+  },
+  {
+   "crn": "23089",
+   "course": "SOAN 201",
+   "section": "9",
+   "instructor": "Hakim Hussein Agha, Dina",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "08:00",
+     "end": "09:15",
+     "room": "Nicely Hall 327"
+    }
+   ]
+  },
+  {
+   "crn": "23090",
+   "course": "SOAN 203",
+   "section": "1",
+   "instructor": "Wick, Livia Celine",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Nicely Hall 412"
+    }
+   ]
+  },
+  {
+   "crn": "23091",
+   "course": "SOAN 203",
+   "section": "2",
+   "instructor": "Matta Saleh, Elizabeth",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Nicely Hall 206"
+    }
+   ]
+  },
+  {
+   "crn": "23092",
+   "course": "SOAN 203",
+   "section": "3",
+   "instructor": "Seroujian, Narod",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 202"
+    }
+   ]
+  },
+  {
+   "crn": "23093",
+   "course": "SOAN 203",
+   "section": "4",
+   "instructor": "Seroujian, Narod",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 323"
+    }
+   ]
+  },
+  {
+   "crn": "23094",
+   "course": "SOAN 203",
+   "section": "5",
+   "instructor": "Seroujian, Narod",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Nicely Hall 211"
+    }
+   ]
+  },
+  {
+   "crn": "23095",
+   "course": "SOAN 203",
+   "section": "6",
+   "instructor": "Ghanem, Samar",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Nicely Hall 102"
+    }
+   ]
+  },
+  {
+   "crn": "23096",
+   "course": "SOAN 203",
+   "section": "7",
+   "instructor": "Ghanem, Samar",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Nicely Hall 102"
+    }
+   ]
+  },
+  {
+   "crn": "23097",
+   "course": "SOAN 203",
+   "section": "8",
+   "instructor": "Ghanem, Samar",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Nicely Hall 410"
+    }
+   ]
+  },
+  {
+   "crn": "23098",
+   "course": "SOAN 211",
+   "section": "1",
+   "instructor": "Sukarieh, Rana",
+   "seats_open": 12,
+   "capacity": 20,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Issam Fares Inst for PP&Int-Af 102"
+    }
+   ]
+  },
+  {
+   "crn": "23099",
+   "course": "SOAN 213",
+   "section": "1",
+   "instructor": "Kassir, Alexandra",
+   "seats_open": 8,
+   "capacity": 25,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Nicely Hall 410"
+    }
+   ]
+  },
+  {
+   "crn": "23100",
+   "course": "SOAN 219",
+   "section": "1",
+   "instructor": "Ghanem, Samar",
+   "seats_open": 0,
+   "capacity": 25,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Nicely Hall 318"
+    }
+   ]
+  },
+  {
+   "crn": "23102",
+   "course": "SOAN 221",
+   "section": "1",
+   "instructor": "Al Rammal, Rayane",
+   "seats_open": 12,
+   "capacity": 20,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Nicely Hall 410"
+    }
+   ]
+  },
+  {
+   "crn": "23103",
+   "course": "SOAN 225",
+   "section": "1",
+   "instructor": "Matta Saleh, Elizabeth",
+   "seats_open": 0,
+   "capacity": 25,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 105"
+    }
+   ]
+  },
+  {
+   "crn": "20705",
+   "course": "CHLA 201",
+   "section": "",
+   "instructor": "Arsenian Ekmekji, Arda",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Nicely Hall 321"
+    }
+   ]
+  },
+  {
+   "crn": "20706",
+   "course": "CHLA 201",
+   "section": "",
+   "instructor": "Arsenian Ekmekji, Arda",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Nicely Hall 318"
+    }
+   ]
+  },
+  {
+   "crn": "20707",
+   "course": "CHLA 201",
+   "section": "",
+   "instructor": "Stein, Eva",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "08:00",
+     "end": "09:15",
+     "room": "Nicely Hall 318"
+    }
+   ]
+  },
+  {
+   "crn": "20710",
+   "course": "CHLA 204A",
+   "section": "",
+   "instructor": "Hassan, Hani",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "10:00",
+     "end": "10:50",
+     "room": "Nicely Hall 209"
+    }
+   ]
+  },
+  {
+   "crn": "20711",
+   "course": "CHLA 204A",
+   "section": "",
+   "instructor": "Hassan, Hani",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "08:00",
+     "end": "08:50",
+     "room": "Nicely Hall 105"
+    }
+   ]
+  },
+  {
+   "crn": "20712",
+   "course": "CHLA 204A",
+   "section": "",
+   "instructor": "Youness, Mahmoud",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 209"
+    }
+   ]
+  },
+  {
+   "crn": "20713",
+   "course": "CHLA 206",
+   "section": "",
+   "instructor": "El Amm, Charbel",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "09:00",
+     "end": "09:50",
+     "room": "Nicely Hall 327"
+    }
+   ]
+  },
+  {
+   "crn": "20714",
+   "course": "CHLA 206",
+   "section": "",
+   "instructor": "Goodfield, Eric",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Nicely Hall 322"
+    }
+   ]
+  },
+  {
+   "crn": "20715",
+   "course": "CHLA 206",
+   "section": "",
+   "instructor": "Goodfield, Eric",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 322"
+    }
+   ]
+  },
+  {
+   "crn": "20722",
+   "course": "CHLA 211A",
+   "section": "",
+   "instructor": "Agha, Saleh",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Nicely Hall 327"
+    }
+   ]
+  },
+  {
+   "crn": "20723",
+   "course": "CHLA 211A",
+   "section": "",
+   "instructor": "Youness, Mahmoud",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "10:00",
+     "end": "10:50",
+     "room": "Nicely Hall 321"
+    }
+   ]
+  },
+  {
+   "crn": "20724",
+   "course": "CHLA 211B",
+   "section": "",
+   "instructor": "El Amm, Charbel",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "11:00",
+     "end": "11:50",
+     "room": "Nicely Hall 105"
+    }
+   ]
+  },
+  {
+   "crn": "20725",
+   "course": "CHLA 212A",
+   "section": "",
+   "instructor": "Nasser Eddin, Mohamad",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "17:00",
+     "end": "18:15",
+     "room": "Nicely Hall 327"
+    }
+   ]
+  },
+  {
+   "crn": "20726",
+   "course": "CHLA 212A",
+   "section": "",
+   "instructor": "Nasser Eddin, Mohamad",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "17:00",
+     "end": "18:15",
+     "room": "Nicely Hall 325"
+    }
+   ]
+  },
+  {
+   "crn": "20727",
+   "course": "CHLA 213B",
+   "section": "",
+   "instructor": "El Amm, Charbel",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "12:30",
+     "end": "13:20",
+     "room": "Nicely Hall 324"
+    }
+   ]
+  },
+  {
+   "crn": "20728",
+   "course": "CHLA 213B",
+   "section": "",
+   "instructor": "El Amm, Charbel",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "08:00",
+     "end": "08:50",
+     "room": "Nicely Hall 209"
+    }
+   ]
+  },
+  {
+   "crn": "23423",
+   "course": "CHLA 213C",
+   "section": "",
+   "instructor": "Bou Ali, Nadia",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 327"
+    }
+   ]
+  },
+  {
+   "crn": "20729",
+   "course": "CHLA 214A",
+   "section": "",
+   "instructor": "Jarrar, Maher",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Nicely Hall 107"
+    }
+   ]
+  },
+  {
+   "crn": "20730",
+   "course": "CHLA 214A",
+   "section": "",
+   "instructor": "Youness, Mahmoud",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Fisk Hall 336"
+    }
+   ]
+  },
+  {
+   "crn": "20731",
+   "course": "CHLA 214B",
+   "section": "",
+   "instructor": "Mitri, Karim",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "17:00",
+     "end": "18:15",
+     "room": "Nicely Hall 108"
+    }
+   ]
+  },
+  {
+   "crn": "20732",
+   "course": "CHLA 214D",
+   "section": "",
+   "instructor": "Hassan, Hani",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Nicely Hall 327"
+    }
+   ]
+  },
+  {
+   "crn": "20733",
+   "course": "CHLA 214H",
+   "section": "",
+   "instructor": "Douaihy, Michel",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Hariri School of Nursing 104"
+    }
+   ]
+  },
+  {
+   "crn": "20734",
+   "course": "CHLA 263",
+   "section": "",
+   "instructor": "Adnan, Hashem",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "17:00",
+     "end": "18:15",
+     "room": "Nicely Hall 324"
+    }
+   ]
+  },
+  {
+   "crn": "20037",
+   "course": "AGSC 205",
+   "section": "",
+   "instructor": "Hamadeh, Shady",
+   "seats_open": 1,
+   "capacity": 20,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "M",
+     "start": "10:00",
+     "end": "11:14",
+     "room": "Agriculture &Food Sciences Blg 102"
+    },
+    {
+     "type": "lecture",
+     "days": "F",
+     "start": "10:00",
+     "end": "11:14",
+     "room": "Agriculture &Food Sciences Blg 102"
+    }
+   ]
+  },
+  {
+   "crn": "20038",
+   "course": "AGSC 205",
+   "section": "",
+   "instructor": "Hamadeh, Shady",
+   "seats_open": 9,
+   "capacity": 20,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "W",
+     "start": "10:00",
+     "end": "11:14",
+     "room": "Agriculture &Food Sciences Blg 102"
+    },
+    {
+     "type": "lecture",
+     "days": "F",
+     "start": "10:00",
+     "end": "11:14",
+     "room": "Agriculture &Food Sciences Blg 102"
+    }
+   ]
+  },
+  {
+   "crn": "20090",
+   "course": "AMST 215",
+   "section": "",
+   "instructor": "Baghdadi, Rana",
+   "seats_open": 0,
+   "capacity": 25,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 412"
+    }
+   ]
+  },
+  {
+   "crn": "20095",
+   "course": "AMST 275BB",
+   "section": "",
+   "instructor": "Smith, Dorin Robert",
+   "seats_open": 18,
+   "capacity": 18,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Fisk Hall 207"
+    }
+   ]
+  },
+  {
+   "crn": "23309",
+   "course": "AMST 275BF",
+   "section": "",
+   "instructor": "Staff",
+   "seats_open": 3,
+   "capacity": 18,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Nicely Hall 327"
+    }
+   ]
+  },
+  {
+   "crn": "20126",
+   "course": "ARAB 212",
+   "section": "",
+   "instructor": "Bazzi, Tarif",
+   "seats_open": 0,
+   "capacity": 20,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Nicely Hall 212"
+    }
+   ]
+  },
+  {
+   "crn": "20127",
+   "course": "ARAB 213",
+   "section": "",
+   "instructor": "Ghaddar, Hussein",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Nicely Hall 209"
+    }
+   ]
+  },
+  {
+   "crn": "20128",
+   "course": "ARAB 215",
+   "section": "",
+   "instructor": "Bou Fadel, Najm",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "08:00",
+     "end": "09:15",
+     "room": "Nicely Hall 101"
+    }
+   ]
+  },
+  {
+   "crn": "20131",
+   "course": "ARAB 230",
+   "section": "",
+   "instructor": "Moukaled, Sina",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Munib &Angela Masri Complex 206"
+    }
+   ]
+  },
+  {
+   "crn": "20132",
+   "course": "ARAB 231",
+   "section": "",
+   "instructor": "Atiyyah, Najah (Hawwa)",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Nicely Hall 101"
+    }
+   ]
+  },
+  {
+   "crn": "20134",
+   "course": "ARAB 236",
+   "section": "",
+   "instructor": "El Ali, Mariam",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Nicely Hall 416"
+    }
+   ]
+  },
+  {
+   "crn": "20135",
+   "course": "ARAB 238",
+   "section": "",
+   "instructor": "Fakhreddine, Jawdat",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Post Hall 207"
+    }
+   ]
+  },
+  {
+   "crn": "20136",
+   "course": "ARAB 243",
+   "section": "",
+   "instructor": "Atiyyah, Najah (Hawwa)",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Nicely Hall 417"
+    }
+   ]
+  },
+  {
+   "crn": "20137",
+   "course": "ARAB 243",
+   "section": "",
+   "instructor": "Atiyyah, Najah (Hawwa)",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Nicely Hall 414"
+    }
+   ]
+  },
+  {
+   "crn": "20138",
+   "course": "ARAB 246",
+   "section": "",
+   "instructor": "Fakhreddine, Jawdat",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Post Hall 207"
+    }
+   ]
+  },
+  {
+   "crn": "20139",
+   "course": "ARAB 251AA",
+   "section": "",
+   "instructor": "Malti, Samir",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Nicely Hall 202"
+    }
+   ]
+  },
+  {
+   "crn": "20140",
+   "course": "ARAB 251AJ",
+   "section": "",
+   "instructor": "Jarrar, Maher",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Nicely Hall 318"
+    }
+   ]
+  },
+  {
+   "crn": "20141",
+   "course": "ARAB 251AW",
+   "section": "",
+   "instructor": "Ghaddar, Hussein",
+   "seats_open": 0,
+   "capacity": 20,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "17:00",
+     "end": "18:15",
+     "room": "Nicely Hall 327"
+    }
+   ]
+  },
+  {
+   "crn": "20142",
+   "course": "ARAB 251BA",
+   "section": "",
+   "instructor": "Ghaddar, Hussein",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "08:00",
+     "end": "09:15",
+     "room": "Nicely Hall 107"
+    }
+   ]
+  },
+  {
+   "crn": "20143",
+   "course": "ARAB 251BB",
+   "section": "",
+   "instructor": "Khansa, Enass",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Nicely Hall 209"
+    }
+   ]
+  },
+  {
+   "crn": "20144",
+   "course": "ARAB 251BB",
+   "section": "",
+   "instructor": "Khansa, Enass",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 318"
+    }
+   ]
+  },
+  {
+   "crn": "20146",
+   "course": "ARAB 251W",
+   "section": "",
+   "instructor": "Nahas El-Zein, Raghda",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Munib &Angela Masri Complex 206"
+    }
+   ]
+  },
+  {
+   "crn": "20211",
+   "course": "AROL 214",
+   "section": "",
+   "instructor": "Genz, Hermann",
+   "seats_open": 2,
+   "capacity": 25,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "08:00",
+     "end": "08:50",
+     "room": "Post Hall 207"
+    }
+   ]
+  },
+  {
+   "crn": "20212",
+   "course": "AROL 222",
+   "section": "",
+   "instructor": "Newson, Paul Graham",
+   "seats_open": 2,
+   "capacity": 25,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Nicely Hall 411"
+    }
+   ]
+  },
+  {
+   "crn": "20213",
+   "course": "AROL 224",
+   "section": "",
+   "instructor": "Newson, Paul Graham",
+   "seats_open": 4,
+   "capacity": 25,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 209"
+    }
+   ]
+  },
+  {
+   "crn": "20214",
+   "course": "AROL 230",
+   "section": "",
+   "instructor": "Genz, Hermann",
+   "seats_open": 0,
+   "capacity": 10,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "09:00",
+     "end": "09:50",
+     "room": "Post Hall 203"
+    }
+   ]
+  },
+  {
+   "crn": "20215",
+   "course": "AROL 231",
+   "section": "",
+   "instructor": "Sader, Helene",
+   "seats_open": 17,
+   "capacity": 25,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Post Hall 207"
+    }
+   ]
+  },
+  {
+   "crn": "20216",
+   "course": "AROL 235AK",
+   "section": "",
+   "instructor": "Panayot, Nadine",
+   "seats_open": 18,
+   "capacity": 25,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Post Hall 108"
+    }
+   ]
+  },
+  {
+   "crn": "20217",
+   "course": "AROL 240",
+   "section": "",
+   "instructor": "Malleson, Claire Joanna",
+   "seats_open": 0,
+   "capacity": 25,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Post Hall 207"
+    }
+   ]
+  },
+  {
+   "crn": "20190",
+   "course": "ARCH 122",
+   "section": "",
+   "instructor": "Genz, Bettina",
+   "seats_open": 22,
+   "capacity": 80,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "08:00",
+     "end": "09:15",
+     "room": "Dar AlHandasah Shair&P Arch B. 106"
+    }
+   ]
+  },
+  {
+   "crn": "20066",
+   "course": "AHIS 203",
+   "section": "",
+   "instructor": "Schell, Sarah Elizabeth",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Nicely Hall 406"
+    }
+   ]
+  },
+  {
+   "crn": "20067",
+   "course": "AHIS 203",
+   "section": "",
+   "instructor": "Schell, Sarah Elizabeth",
+   "seats_open": 1,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Nicely Hall 406"
+    }
+   ]
+  },
+  {
+   "crn": "20068",
+   "course": "AHIS 205",
+   "section": "",
+   "instructor": "Schell, Sarah Elizabeth",
+   "seats_open": 5,
+   "capacity": 15,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 402"
+    }
+   ]
+  },
+  {
+   "crn": "20069",
+   "course": "AHIS 205",
+   "section": "",
+   "instructor": "Schell, Sarah Elizabeth",
+   "seats_open": 8,
+   "capacity": 15,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Nicely Hall 402"
+    }
+   ]
+  },
+  {
+   "crn": "20070",
+   "course": "AHIS 210",
+   "section": "",
+   "instructor": "Hammond, Joseph Richard",
+   "seats_open": 13,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 406"
+    }
+   ]
+  },
+  {
+   "crn": "20071",
+   "course": "AHIS 224",
+   "section": "",
+   "instructor": "Al-Bahloly, Saleem",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 406"
+    }
+   ]
+  },
+  {
+   "crn": "20072",
+   "course": "AHIS 228",
+   "section": "",
+   "instructor": "Al-Bahloly, Saleem",
+   "seats_open": 0,
+   "capacity": 11,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "W",
+     "start": "15:30",
+     "end": "17:59",
+     "room": "Nicely Hall 406"
+    }
+   ]
+  },
+  {
+   "crn": "20073",
+   "course": "AHIS 249M",
+   "section": "",
+   "instructor": "Saadawi, Ghalya",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "17:00",
+     "end": "18:15",
+     "room": "Nicely Hall 406"
+    }
+   ]
+  },
+  {
+   "crn": "20074",
+   "course": "AHIS 249N",
+   "section": "",
+   "instructor": "Sadek, Walid",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Nicely Hall 406"
+    }
+   ]
+  },
+  {
+   "crn": "20075",
+   "course": "AHIS 252",
+   "section": "",
+   "instructor": "Esanu, Octavian",
+   "seats_open": 0,
+   "capacity": 8,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "M",
+     "start": "15:30",
+     "end": "17:59",
+     "room": "Nicely Hall 406"
+    }
+   ]
+  },
+  {
+   "crn": "20515",
+   "course": "BUSS 215",
+   "section": "",
+   "instructor": "Staff",
+   "seats_open": 0,
+   "capacity": 30,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Suliman S.Olayan Sch.of Busin. 241"
+    }
+   ]
+  },
+  {
+   "crn": "20516",
+   "course": "BUSS 215",
+   "section": "",
+   "instructor": "Dimitri, Karim",
+   "seats_open": 0,
+   "capacity": 30,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "08:00",
+     "end": "09:15",
+     "room": "Suliman S.Olayan Sch.of Busin. 233"
+    }
+   ]
+  },
+  {
+   "crn": "20517",
+   "course": "BUSS 215",
+   "section": "",
+   "instructor": "Ramirez Centeno, Alejandro",
+   "seats_open": 0,
+   "capacity": 30,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Suliman S.Olayan Sch.of Busin. 241"
+    }
+   ]
+  },
+  {
+   "crn": "20518",
+   "course": "BUSS 215",
+   "section": "",
+   "instructor": "Said, Jessica",
+   "seats_open": 0,
+   "capacity": 30,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Suliman S.Olayan Sch.of Busin. 233"
+    }
+   ]
+  },
+  {
+   "crn": "20519",
+   "course": "BUSS 215",
+   "section": "",
+   "instructor": "Dimitri, Karim",
+   "seats_open": 0,
+   "capacity": 30,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Suliman S.Olayan Sch.of Busin. 233"
+    }
+   ]
+  },
+  {
+   "crn": "20520",
+   "course": "BUSS 215",
+   "section": "",
+   "instructor": "Ramirez Centeno, Alejandro",
+   "seats_open": 0,
+   "capacity": 30,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Suliman S.Olayan Sch.of Busin. 233"
+    }
+   ]
+  },
+  {
+   "crn": "20521",
+   "course": "BUSS 215",
+   "section": "",
+   "instructor": "Said, Jessica",
+   "seats_open": 0,
+   "capacity": 30,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Suliman S.Olayan Sch.of Busin. 238"
+    }
+   ]
+  },
+  {
+   "crn": "20522",
+   "course": "BUSS 215",
+   "section": "",
+   "instructor": "Akkawi, Yasser",
+   "seats_open": 0,
+   "capacity": 30,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Suliman S.Olayan Sch.of Busin. 216"
+    }
+   ]
+  },
+  {
+   "crn": "20523",
+   "course": "BUSS 215",
+   "section": "",
+   "instructor": "Sinno, Abir",
+   "seats_open": 0,
+   "capacity": 30,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Suliman S.Olayan Sch.of Busin. 230"
+    }
+   ]
+  },
+  {
+   "crn": "20524",
+   "course": "BUSS 215",
+   "section": "",
+   "instructor": "Akkawi, Yasser",
+   "seats_open": 0,
+   "capacity": 30,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "08:00",
+     "end": "09:15",
+     "room": "Suliman S.Olayan Sch.of Busin. 233"
+    }
+   ]
+  },
+  {
+   "crn": "21096",
+   "course": "ECON 221",
+   "section": "",
+   "instructor": "Ramadan, Usamah Husni",
+   "seats_open": 0,
+   "capacity": 25,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Nicely Hall 107"
+    }
+   ]
+  },
+  {
+   "crn": "21538",
+   "course": "ENGL 205",
+   "section": "",
+   "instructor": "Ard-Keyser, Emily",
+   "seats_open": 11,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Fisk Hall 336"
+    }
+   ]
+  },
+  {
+   "crn": "21558",
+   "course": "ENGL 207",
+   "section": "",
+   "instructor": "Hout, Syrine",
+   "seats_open": 6,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Fisk Hall 312"
+    }
+   ]
+  },
+  {
+   "crn": "21560",
+   "course": "ENGL 212",
+   "section": "",
+   "instructor": "Gonsalves, Joshua David",
+   "seats_open": 16,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Fisk Hall 207"
+    }
+   ]
+  },
+  {
+   "crn": "21561",
+   "course": "ENGL 214",
+   "section": "",
+   "instructor": "Nassar, Christopher",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Nicely Hall 324"
+    }
+   ]
+  },
+  {
+   "crn": "21562",
+   "course": "ENGL 219",
+   "section": "",
+   "instructor": "Ard-Keyser, Emily",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "17:00",
+     "end": "18:15",
+     "room": "Nicely Hall 411"
+    }
+   ]
+  },
+  {
+   "crn": "21563",
+   "course": "ENGL 224",
+   "section": "",
+   "instructor": "Smith, Dorin Robert",
+   "seats_open": 5,
+   "capacity": 7,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Fisk Hall 207"
+    }
+   ]
+  },
+  {
+   "crn": "21564",
+   "course": "ENGL 227",
+   "section": "",
+   "instructor": "Shaaban, Kassim",
+   "seats_open": 3,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Fisk Hall 312"
+    }
+   ]
+  },
+  {
+   "crn": "21566",
+   "course": "ENGL 229",
+   "section": "",
+   "instructor": "Ard-Keyser, Devan",
+   "seats_open": 1,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Fisk Hall 324"
+    }
+   ]
+  },
+  {
+   "crn": "21567",
+   "course": "ENGL 233",
+   "section": "",
+   "instructor": "Baalbaki, Rula",
+   "seats_open": 3,
+   "capacity": 18,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Fisk Hall 324"
+    }
+   ]
+  },
+  {
+   "crn": "21568",
+   "course": "ENGL 233",
+   "section": "",
+   "instructor": "Baalbaki, Rula",
+   "seats_open": 3,
+   "capacity": 18,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Nicely Hall 412"
+    }
+   ]
+  },
+  {
+   "crn": "21569",
+   "course": "ENGL 233",
+   "section": "",
+   "instructor": "Baalbaki, Rula",
+   "seats_open": 2,
+   "capacity": 18,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Fisk Hall 342"
+    }
+   ]
+  },
+  {
+   "crn": "21571",
+   "course": "ENGL 236",
+   "section": "",
+   "instructor": "Rantisi, Rima",
+   "seats_open": 3,
+   "capacity": 15,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Fisk Hall 336"
+    }
+   ]
+  },
+  {
+   "crn": "21572",
+   "course": "ENGL 236",
+   "section": "",
+   "instructor": "Rantisi, Rima",
+   "seats_open": 3,
+   "capacity": 15,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Nicely Hall 412"
+    }
+   ]
+  },
+  {
+   "crn": "23375",
+   "course": "ENGL 240A",
+   "section": "",
+   "instructor": "Khayyat, Yasmine",
+   "seats_open": 12,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 101"
+    }
+   ]
+  },
+  {
+   "crn": "23372",
+   "course": "ENGL 240B",
+   "section": "",
+   "instructor": "Staff",
+   "seats_open": 4,
+   "capacity": 7,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Nicely Hall 327"
+    }
+   ]
+  },
+  {
+   "crn": "21576",
+   "course": "ENGL 249",
+   "section": "",
+   "instructor": "Ali, Tariq Mehmood",
+   "seats_open": 0,
+   "capacity": 15,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "T",
+     "start": "15:30",
+     "end": "18:00",
+     "room": "Nicely Hall 101"
+    }
+   ]
+  },
+  {
+   "crn": "21577",
+   "course": "ENGL 250",
+   "section": "",
+   "instructor": "Rantisi, Rima",
+   "seats_open": 1,
+   "capacity": 15,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Fisk Hall 207"
+    }
+   ]
+  },
+  {
+   "crn": "21578",
+   "course": "ENGL 254A",
+   "section": "",
+   "instructor": "Avant, Doyle Rexford",
+   "seats_open": 0,
+   "capacity": 15,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Fisk Hall 312"
+    }
+   ]
+  },
+  {
+   "crn": "21579",
+   "course": "ENGL 254N",
+   "section": "",
+   "instructor": "Shaer, Farah",
+   "seats_open": 0,
+   "capacity": 16,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 101"
+    }
+   ]
+  },
+  {
+   "crn": "21580",
+   "course": "ENGL 254O",
+   "section": "",
+   "instructor": "Stephan, Rania",
+   "seats_open": 0,
+   "capacity": 15,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Fisk Hall 207"
+    }
+   ]
+  },
+  {
+   "crn": "21581",
+   "course": "ENGL 254P",
+   "section": "",
+   "instructor": "Stephan, Rania",
+   "seats_open": 0,
+   "capacity": 15,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Fisk Hall 207"
+    }
+   ]
+  },
+  {
+   "crn": "21582",
+   "course": "ENGL 256E",
+   "section": "",
+   "instructor": "Moughabghab, Emma",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Fisk Hall 324"
+    }
+   ]
+  },
+  {
+   "crn": "21583",
+   "course": "ENGL 257H",
+   "section": "",
+   "instructor": "Gonsalves, Joshua David",
+   "seats_open": 18,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Fisk Hall 207"
+    }
+   ]
+  },
+  {
+   "crn": "21584",
+   "course": "ENGL 264",
+   "section": "",
+   "instructor": "Ali, Tariq Mehmood",
+   "seats_open": 3,
+   "capacity": 15,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "W",
+     "start": "15:30",
+     "end": "17:59",
+     "room": "Nicely Hall 107"
+    }
+   ]
+  },
+  {
+   "crn": "21792",
+   "course": "GEOL 208",
+   "section": "",
+   "instructor": "Genz, Hermann",
+   "seats_open": 4,
+   "capacity": 15,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "09:00",
+     "end": "09:50",
+     "room": "Post Hall 203"
+    }
+   ]
+  },
+  {
+   "crn": "21826",
+   "course": "HIST 202",
+   "section": "",
+   "instructor": "Kaidbey Takieddine, Naila",
+   "seats_open": 0,
+   "capacity": 25,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "12:30",
+     "end": "13:20",
+     "room": "Nicely Hall 323"
+    }
+   ]
+  },
+  {
+   "crn": "21827",
+   "course": "HIST 238",
+   "section": "",
+   "instructor": "Ketsamanian, Varak",
+   "seats_open": 7,
+   "capacity": 25,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Nicely Hall 321"
+    }
+   ]
+  },
+  {
+   "crn": "21828",
+   "course": "HIST 246",
+   "section": "",
+   "instructor": "Rabah, Makram",
+   "seats_open": 20,
+   "capacity": 25,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 321"
+    }
+   ]
+  },
+  {
+   "crn": "21924",
+   "course": "INDE 410",
+   "section": "",
+   "instructor": "Saad, Youssef",
+   "seats_open": 7,
+   "capacity": 40,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "09:00",
+     "end": "09:50",
+     "room": "Bechtel Engineering Building 203"
+    }
+   ]
+  },
+  {
+   "crn": "21925",
+   "course": "INDE 410",
+   "section": "",
+   "instructor": "Sfeir, Rana",
+   "seats_open": 15,
+   "capacity": 40,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Ray Irani Oxy Eng'g Complex 210-B"
+    }
+   ]
+  },
+  {
+   "crn": "21926",
+   "course": "INDE 410",
+   "section": "",
+   "instructor": "Demachkieh, Farah",
+   "seats_open": 7,
+   "capacity": 40,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "08:00",
+     "end": "09:15",
+     "room": "Bechtel Engineering Building 109"
+    }
+   ]
+  },
+  {
+   "crn": "21927",
+   "course": "INDE 410",
+   "section": "",
+   "instructor": "Demachkieh, Farah",
+   "seats_open": 0,
+   "capacity": 40,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "08:00",
+     "end": "09:15",
+     "room": "Bechtel Engineering Building 107"
+    }
+   ]
+  },
+  {
+   "crn": "21928",
+   "course": "INDE 410",
+   "section": "",
+   "instructor": "Sfeir, Rana",
+   "seats_open": 0,
+   "capacity": 40,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Ray Irani Oxy Eng'g Complex 210-A"
+    }
+   ]
+  },
+  {
+   "crn": "21929",
+   "course": "INDE 410",
+   "section": "",
+   "instructor": "Saad, Youssef",
+   "seats_open": 13,
+   "capacity": 40,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "08:00",
+     "end": "08:50",
+     "room": "Bechtel Engineering Building 205"
+    }
+   ]
+  },
+  {
+   "crn": "21930",
+   "course": "INDE 410",
+   "section": "",
+   "instructor": "Saad, Youssef",
+   "seats_open": 24,
+   "capacity": 40,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "08:00",
+     "end": "08:50",
+     "room": "Bechtel Engineering Building 203"
+    }
+   ]
+  },
+  {
+   "crn": "21931",
+   "course": "INDE 410",
+   "section": "",
+   "instructor": "Saad, Youssef",
+   "seats_open": 0,
+   "capacity": 40,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "09:00",
+     "end": "09:50",
+     "room": "Bechtel Engineering Building 201"
+    }
+   ]
+  },
+  {
+   "crn": "21981",
+   "course": "LDEM 208",
+   "section": "",
+   "instructor": "Bacha, Karim",
+   "seats_open": 4,
+   "capacity": 21,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Bechtel Engineering Building 211"
+    }
+   ]
+  },
+  {
+   "crn": "23469",
+   "course": "LDEM 280",
+   "section": "",
+   "instructor": "Zurayk, Rami",
+   "seats_open": 3,
+   "capacity": 5,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 327"
+    }
+   ]
+  },
+  {
+   "crn": "22159",
+   "course": "MCOM 204",
+   "section": "",
+   "instructor": "Aprahamian, Panos",
+   "seats_open": 0,
+   "capacity": 18,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 206"
+    }
+   ]
+  },
+  {
+   "crn": "22160",
+   "course": "MCOM 204",
+   "section": "",
+   "instructor": "Bzeih, Bachar",
+   "seats_open": 0,
+   "capacity": 18,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Nicely Hall 206"
+    }
+   ]
+  },
+  {
+   "crn": "22433",
+   "course": "MUSC 205",
+   "section": "",
+   "instructor": "Garro El Khoury, Joelle",
+   "seats_open": 13,
+   "capacity": 20,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "14:00",
+     "end": "14:50",
+     "room": "Nicely Hall B2"
+    }
+   ]
+  },
+  {
+   "crn": "22434",
+   "course": "MUSC 221",
+   "section": "",
+   "instructor": "Maalouf, Maya Berta",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall B2"
+    }
+   ]
+  },
+  {
+   "crn": "22435",
+   "course": "MUSC 221",
+   "section": "",
+   "instructor": "Maalouf, Maya Berta",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Nicely Hall B2"
+    }
+   ]
+  },
+  {
+   "crn": "22436",
+   "course": "MUSC 230",
+   "section": "",
+   "instructor": "Garro El Khoury, Joelle",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "10:00",
+     "end": "10:50",
+     "room": "Nicely Hall B2"
+    }
+   ]
+  },
+  {
+   "crn": "22437",
+   "course": "MUSC 231F",
+   "section": "",
+   "instructor": "Garro El Khoury, Joelle",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "11:00",
+     "end": "11:50",
+     "room": "Nicely Hall B2"
+    }
+   ]
+  },
+  {
+   "crn": "22438",
+   "course": "MUSC 235",
+   "section": "",
+   "instructor": "Al-Amine, Gheith",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Nicely Hall B2"
+    }
+   ]
+  },
+  {
+   "crn": "22439",
+   "course": "MUSC 239E",
+   "section": "",
+   "instructor": "Garro El Khoury, Joelle",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "12:30",
+     "end": "13:20",
+     "room": "Nicely Hall B2"
+    }
+   ]
+  },
+  {
+   "crn": "22440",
+   "course": "MUSC 239F",
+   "section": "",
+   "instructor": "Al-Amine, Gheith",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Nicely Hall B2"
+    }
+   ]
+  },
+  {
+   "crn": "22441",
+   "course": "MUSC 250",
+   "section": "",
+   "instructor": "Khcheich, Rima",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Nicely Hall B2"
+    }
+   ]
+  },
+  {
+   "crn": "22442",
+   "course": "MUSC 263",
+   "section": "",
+   "instructor": "Abela, Joe-Pietro",
+   "seats_open": 0,
+   "capacity": 12,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Nicely Hall 409"
+    }
+   ]
+  },
+  {
+   "crn": "22443",
+   "course": "MUSC 265",
+   "section": "",
+   "instructor": "Sabbah, Yasmina",
+   "seats_open": 5,
+   "capacity": 12,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "10:00",
+     "end": "10:50",
+     "room": "Nicely Hall 409"
+    }
+   ]
+  },
+  {
+   "crn": "22444",
+   "course": "MUSC 266",
+   "section": "",
+   "instructor": "Khcheich, Rima",
+   "seats_open": 1,
+   "capacity": 12,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Nicely Hall 409"
+    }
+   ]
+  },
+  {
+   "crn": "22445",
+   "course": "MUSC 269B",
+   "section": "",
+   "instructor": "Abou Samra, Nidal",
+   "seats_open": 0,
+   "capacity": 12,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "17:00",
+     "end": "18:15",
+     "room": "Nicely Hall 409"
+    }
+   ]
+  },
+  {
+   "crn": "22446",
+   "course": "MUSC 269C",
+   "section": "",
+   "instructor": "Yassine, Khaled",
+   "seats_open": 0,
+   "capacity": 12,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Nicely Hall 409"
+    }
+   ]
+  },
+  {
+   "crn": "22683",
+   "course": "PHIL 201",
+   "section": "",
+   "instructor": "Talhouk, Omar",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Fisk Hall 342"
+    }
+   ]
+  },
+  {
+   "crn": "22684",
+   "course": "PHIL 201",
+   "section": "",
+   "instructor": "Talhouk, Omar",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 417"
+    }
+   ]
+  },
+  {
+   "crn": "22685",
+   "course": "PHIL 201",
+   "section": "",
+   "instructor": "Talhouk, Omar",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Nicely Hall 412"
+    }
+   ]
+  },
+  {
+   "crn": "22686",
+   "course": "PHIL 201",
+   "section": "",
+   "instructor": "El Hassanieh, Mahmoud",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Fisk Hall 336"
+    }
+   ]
+  },
+  {
+   "crn": "22687",
+   "course": "PHIL 201",
+   "section": "",
+   "instructor": "El Hassanieh, Mahmoud",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Nicely Hall 416"
+    }
+   ]
+  },
+  {
+   "crn": "22688",
+   "course": "PHIL 201",
+   "section": "",
+   "instructor": "Barakat, Karim",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Nicely Hall 212"
+    }
+   ]
+  },
+  {
+   "crn": "22689",
+   "course": "PHIL 201",
+   "section": "",
+   "instructor": "Sabra, Zainab",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 318"
+    }
+   ]
+  },
+  {
+   "crn": "22690",
+   "course": "PHIL 201",
+   "section": "",
+   "instructor": "Staff",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "17:00",
+     "end": "18:15",
+     "room": "Fisk Hall 312"
+    }
+   ]
+  },
+  {
+   "crn": "22692",
+   "course": "PHIL 205",
+   "section": "",
+   "instructor": "Turan, Caner",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Nicely Hall 327"
+    }
+   ]
+  },
+  {
+   "crn": "22693",
+   "course": "PHIL 205",
+   "section": "",
+   "instructor": "El Hassanieh, Mahmoud",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Fisk Hall 312"
+    }
+   ]
+  },
+  {
+   "crn": "22694",
+   "course": "PHIL 208A",
+   "section": "",
+   "instructor": "Muller, Hans D.",
+   "seats_open": 0,
+   "capacity": 29,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 327"
+    }
+   ]
+  },
+  {
+   "crn": "22695",
+   "course": "PHIL 208D",
+   "section": "",
+   "instructor": "Turan, Caner",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Fisk Hall 312"
+    }
+   ]
+  },
+  {
+   "crn": "22696",
+   "course": "PHIL 209",
+   "section": "",
+   "instructor": "Wahab, Karam",
+   "seats_open": 2,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Nicely Hall 416"
+    }
+   ]
+  },
+  {
+   "crn": "22697",
+   "course": "PHIL 209",
+   "section": "",
+   "instructor": "Wahab, Karam",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 103"
+    }
+   ]
+  },
+  {
+   "crn": "22698",
+   "course": "PHIL 210",
+   "section": "",
+   "instructor": "Sabra, Zainab",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Fisk Hall 312"
+    }
+   ]
+  },
+  {
+   "crn": "22699",
+   "course": "PHIL 210",
+   "section": "",
+   "instructor": "Sabra, Zainab",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Bliss Hall 105"
+    }
+   ]
+  },
+  {
+   "crn": "22700",
+   "course": "PHIL 210",
+   "section": "",
+   "instructor": "Baassiri, Mahmoud",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Fisk Hall 336"
+    }
+   ]
+  },
+  {
+   "crn": "22701",
+   "course": "PHIL 210",
+   "section": "",
+   "instructor": "Baassiri, Mahmoud",
+   "seats_open": 0,
+   "capacity": 21,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Bliss Hall 205"
+    }
+   ]
+  },
+  {
+   "crn": "22702",
+   "course": "PHIL 210",
+   "section": "",
+   "instructor": "Baassiri, Mahmoud",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Fisk Hall 336"
+    }
+   ]
+  },
+  {
+   "crn": "22703",
+   "course": "PHIL 210",
+   "section": "",
+   "instructor": "Staff",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 212"
+    }
+   ]
+  },
+  {
+   "crn": "22704",
+   "course": "PHIL 211",
+   "section": "",
+   "instructor": "Muller, Hans D.",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "10:00",
+     "end": "10:50",
+     "room": "Nicely Hall 323"
+    }
+   ]
+  },
+  {
+   "crn": "22705",
+   "course": "PHIL 213",
+   "section": "",
+   "instructor": "Gannage, Emma",
+   "seats_open": 5,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Fisk Hall 324"
+    }
+   ]
+  },
+  {
+   "crn": "22706",
+   "course": "PHIL 219",
+   "section": "",
+   "instructor": "Hassan, Hani",
+   "seats_open": 9,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Nicely Hall 327"
+    }
+   ]
+  },
+  {
+   "crn": "22707",
+   "course": "PHIL 222",
+   "section": "",
+   "instructor": "Mohammadian, Mousa",
+   "seats_open": 14,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Physics Building 217"
+    }
+   ]
+  },
+  {
+   "crn": "22709",
+   "course": "PHIL 252S",
+   "section": "",
+   "instructor": "Barakat, Karim",
+   "seats_open": 13,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Fisk Hall 324"
+    }
+   ]
+  },
+  {
+   "crn": "22710",
+   "course": "PHIL 257E",
+   "section": "",
+   "instructor": "Sabra, Zainab",
+   "seats_open": 2,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Nicely Hall 318"
+    }
+   ]
+  },
+  {
+   "crn": "22711",
+   "course": "PHIL 260C",
+   "section": "",
+   "instructor": "Baassiri, Mahmoud",
+   "seats_open": 17,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Fisk Hall 324"
+    }
+   ]
+  },
+  {
+   "crn": "22712",
+   "course": "PHIL 262B",
+   "section": "",
+   "instructor": "Agha, Saleh",
+   "seats_open": 17,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Nicely Hall 107"
+    }
+   ]
+  },
+  {
+   "crn": "22964",
+   "course": "PSPA 210",
+   "section": "",
+   "instructor": "Frangie, Samer",
+   "seats_open": 0,
+   "capacity": 22,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 414"
+    }
+   ]
+  },
+  {
+   "crn": "23101",
+   "course": "SOAN 220",
+   "section": "",
+   "instructor": "Yaghi, Zeead",
+   "seats_open": 0,
+   "capacity": 25,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "17:00",
+     "end": "18:15",
+     "room": "Nicely Hall 210"
+    }
+   ]
+  },
+  {
+   "crn": "23068",
+   "course": "SART 201",
+   "section": "",
+   "instructor": "Kahwagi, Bassam",
+   "seats_open": 2,
+   "capacity": 12,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "09:30",
+     "end": "12:00",
+     "room": "Nicely Hall 408"
+    }
+   ]
+  },
+  {
+   "crn": "23070",
+   "course": "SART 207",
+   "section": "",
+   "instructor": "Youssef, Jad",
+   "seats_open": 4,
+   "capacity": 12,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "12:00",
+     "room": "Nicely Hall 403"
+    }
+   ]
+  },
+  {
+   "crn": "23172",
+   "course": "THTR 200",
+   "section": "",
+   "instructor": "Raad, Joanna",
+   "seats_open": 3,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Fisk Hall 342"
+    }
+   ]
+  },
+  {
+   "crn": "23173",
+   "course": "THTR 210",
+   "section": "",
+   "instructor": "Raad, Joanna",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "17:00",
+     "end": "18:15",
+     "room": "Fisk Hall 342"
+    }
+   ]
+  },
+  {
+   "crn": "23174",
+   "course": "THTR 218D",
+   "section": "",
+   "instructor": "Ard-Keyser, Emily",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Nicely Hall 321"
+    }
+   ]
+  },
+  {
+   "crn": "23175",
+   "course": "THTR 240",
+   "section": "",
+   "instructor": "Raad, Joanna",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Fisk Hall 342"
+    }
+   ]
+  },
+  {
+   "crn": "23176",
+   "course": "THTR 259",
+   "section": "",
+   "instructor": "Bou Rjeily, Lucien",
+   "seats_open": 1,
+   "capacity": 15,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Nicely Hall 409"
+    }
+   ]
+  },
+  {
+   "crn": "23177",
+   "course": "THTR 260A",
+   "section": "",
+   "instructor": "Harb, Nazha",
+   "seats_open": 0,
+   "capacity": 23,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Nicely Hall 107"
+    }
+   ]
+  },
+  {
+   "crn": "23178",
+   "course": "THTR 260E",
+   "section": "",
+   "instructor": "Adra, May",
+   "seats_open": 0,
+   "capacity": 15,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "14:00",
+     "end": "15:15",
+     "room": "Nicely Hall 409"
+    }
+   ]
+  },
+  {
+   "crn": "21787",
+   "course": "GEOL 201",
+   "section": "",
+   "instructor": "Abdel-Rahman, A.",
+   "seats_open": 10,
+   "capacity": 30,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Post Hall 203"
+    }
+   ]
+  },
+  {
+   "crn": "21788",
+   "course": "GEOL 201",
+   "section": "",
+   "instructor": "Haidar, Ali",
+   "seats_open": 0,
+   "capacity": 30,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Post Hall 203"
+    }
+   ]
+  },
+  {
+   "crn": "21790",
+   "course": "GEOL 204",
+   "section": "",
+   "instructor": "Haidar, Ali",
+   "seats_open": 0,
+   "capacity": 30,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "11:00",
+     "end": "12:15",
+     "room": "Post Hall 203"
+    }
+   ]
+  },
+  {
+   "crn": "21791",
+   "course": "GEOL 204",
+   "section": "",
+   "instructor": "Haidar, Ali",
+   "seats_open": 0,
+   "capacity": 30,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Post Hall 203"
+    }
+   ]
+  },
+  {
+   "crn": "21797",
+   "course": "GEOL 227",
+   "section": "",
+   "instructor": "Nemer, Tony",
+   "seats_open": 19,
+   "capacity": 30,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Post Hall 210"
+    }
+   ]
+  },
+  {
+   "crn": "21987",
+   "course": "LDEM 230",
+   "section": "",
+   "instructor": "Shaiban, Houssam",
+   "seats_open": 0,
+   "capacity": 43,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "CCC Science Research Blg.(SRB) 413"
+    }
+   ]
+  },
+  {
+   "crn": "21992",
+   "course": "LDEM 268",
+   "section": "",
+   "instructor": "Fabian, Monika",
+   "seats_open": 0,
+   "capacity": 20,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "12:30",
+     "end": "13:45",
+     "room": "Ray Irani Oxy Eng'g Complex 312"
+    }
+   ]
+  },
+  {
+   "crn": "22431",
+   "course": "MSCU 204",
+   "section": "",
+   "instructor": "Staff",
+   "seats_open": 9,
+   "capacity": 25,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "15:30",
+     "end": "16:45",
+     "room": "Nicely Hall 414"
+    }
+   ]
+  },
+  {
+   "crn": "22450",
+   "course": "NFSC 220",
+   "section": "",
+   "instructor": "Staff",
+   "seats_open": 0,
+   "capacity": 35,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "12:00",
+     "end": "13:14",
+     "room": "Agriculture &Food Sciences Blg 211"
+    }
+   ]
+  },
+  {
+   "crn": "22452",
+   "course": "NFSC 223",
+   "section": "",
+   "instructor": "Fares, Elie-Jacques",
+   "seats_open": 0,
+   "capacity": 20,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "11:30",
+     "end": "12:44",
+     "room": "Agriculture &Food Sciences Blg 205"
+    }
+   ]
+  },
+  {
+   "crn": "22455",
+   "course": "NFSC 252",
+   "section": "",
+   "instructor": "Daroub, Hamza",
+   "seats_open": 0,
+   "capacity": 20,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MW",
+     "start": "10:00",
+     "end": "11:14",
+     "room": "Agriculture &Food Sciences Blg 211"
+    }
+   ]
+  },
+  {
+   "crn": "22773",
+   "course": "PHYS 200",
+   "section": "",
+   "instructor": "Isber, Samih",
+   "seats_open": 29,
+   "capacity": 75,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "MWF",
+     "start": "12:30",
+     "end": "13:20",
+     "room": "Elemer &Mamdouha Bobst Chem.Bg 001"
+    }
+   ]
+  },
+  {
+   "crn": "22821",
+   "course": "PHYS 212",
+   "section": "",
+   "instructor": "Sabra, Wafic",
+   "seats_open": 20,
+   "capacity": 35,
+   "meetings": [
+    {
+     "type": "lecture",
+     "days": "TR",
+     "start": "09:30",
+     "end": "10:45",
+     "room": "Physics Building 333"
+    }
+   ]
+  }
+ ]
+}

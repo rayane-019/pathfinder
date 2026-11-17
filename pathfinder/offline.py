@@ -13,6 +13,12 @@ def parse_request(text):
     """Very small parser for requests like '15 credits, no classes before 9 AM, one AI elective'."""
     t = text.lower()
     prefs = {"target_credits": 15, "earliest_start": None, "tag": None, "avoid_days": []}
+    if re.search(r"\b(ge|gen ?ed|general education|humanit\w*|social science\w*|natural science\w*)\b", t):
+        prefs["ge"] = True
+        for word, area in [("humanit", "humanities"), ("social science", "social_sciences"),
+                           ("natural science", "natural_sciences"), ("quantitative", "quantitative"), ("arabic", "arabic")]:
+            if word in t:
+                prefs["ge_area"] = area
     m = re.search(r"(\d{1,2})\s*credits?", t)
     if m:
         prefs["target_credits"] = int(m.group(1))
@@ -74,6 +80,17 @@ def plan_offline(student_id, request, on_event):
                       if c["offered_this_term"]]
     if focus:
         electives += [c["code"] for c in call("search_courses", focus_area=focus)["courses"] if c["offered_this_term"]]
+    ge_codes = []
+    if prefs.get("ge"):
+        progress = call("check_ge_progress")
+        missing = [a for a, info in progress["areas"].items() if info["remaining"] > 0 and a != "english"]
+        if prefs.get("ge_area"):
+            missing = [prefs["ge_area"]]
+        think("GE still needed: " + ", ".join(f"{progress['areas'][a]['name']} ({progress['areas'][a]['remaining']})" for a in missing))
+        for a in missing:
+            ge_codes += [c["code"] for c in call("search_courses", ge_area=a)["courses"]
+                         if c["offered_this_term"] and not c["code"].startswith("CMPS")][:15]
+        electives = ge_codes + electives
     electives += [c["code"] for c in data.courses().values() if c["counts_as_cmps_elective"]]
     candidates = list(dict.fromkeys(required + electives))
     think(f"Plan: required first ({', '.join(required) or 'none left'}), then electives.")
@@ -106,7 +123,7 @@ def plan_offline(student_id, request, on_event):
 
     def course_sets(start, chosen, credits):
         if credits == prefs["target_credits"]:
-            if not prefs["tag"] or tag_codes & set(chosen):
+            if (not prefs["tag"] or tag_codes & set(chosen)) and (not ge_codes or set(ge_codes) & set(chosen)):
                 yield list(chosen)
             return
         for i in range(start, len(order)):
@@ -132,7 +149,8 @@ def plan_offline(student_id, request, on_event):
             if code not in fetched:
                 fetch(code)
         order = [c for c in offered[:limit] if c in usable]
-        tag_codes = {c for c in order if prefs["tag"] and prefs["tag"] in data.courses()[c]["tags"]}
+        tag_codes = {c for c in order if prefs["tag"] and prefs["tag"] in data.courses()[c]["tags"]
+                     and data.courses()[c]["counts_as_cmps_elective"]}
         for codes in course_sets(0, [], 0):
             draft = [usable[c][0] for c in codes]       # first draft: first usable section of each
             result = call("check_conflicts", crns=draft)
@@ -171,7 +189,7 @@ def format_plan(crns, report):
         s = data.sections()[crn]
         title = data.courses()[s["course"]]["title"]
         for m in s["meetings"]:
-            label = s["course"] + (" (lab)" if m["type"] == "lab" else "")
+            label = s["course"] + (f" ({m['type']})" if m["type"] != "lecture" else "")
             lines.append(f"| {label} | {title} | {crn} | {m['days']} | {m['start']}-{m['end']} | {m['room']} |")
     lines.append("")
     lines.append(f"Total: {report['total_credits']} credits. Checked by the validator: no conflicts, all prerequisites met.")

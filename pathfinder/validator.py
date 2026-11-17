@@ -63,6 +63,8 @@ def validate_plan(student, crns, constraints=None):
     # 8. AUB elective rules worth flagging.
     for code in set(codes):
         course = data.courses()[code]
+        if course.get("ge_areas") and not code.startswith("CMPS"):
+            continue  # GE courses count toward GE, not CMPS electives: no warning needed
         if not course["counts_as_cmps_elective"] and code not in rules["cs_major"]["required_cmps"]:
             warnings.append(f"{code} ({course['title']}) does not count as a CMPS elective for the CS major")
 

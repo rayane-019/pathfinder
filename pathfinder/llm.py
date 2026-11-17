@@ -41,7 +41,7 @@ class LLMClient:
             raise RuntimeError("No API key. Copy .env.example to .env and set PATHFINDER_API_KEY "
                                "(or run with --offline).")
         # max_retries: the SDK waits and tries again by itself on 429/5xx errors.
-        self.client = OpenAI(api_key=api_key, max_retries=4, timeout=60,
+        self.client = OpenAI(api_key=api_key, max_retries=2, timeout=60,
                              base_url=os.getenv("PATHFINDER_BASE_URL", preset["base_url"]))
 
         # The model from .env first, then the backups (no duplicates).

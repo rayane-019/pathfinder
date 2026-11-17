@@ -1,0 +1,3138 @@
+{
+ "ge_areas": {
+  "english": {
+   "name": "English Communication Skills",
+   "needed": 2
+  },
+  "arabic": {
+   "name": "Arabic Communication Skills",
+   "needed": 1
+  },
+  "humanities": {
+   "name": "Humanities (at least 2 from List I)",
+   "needed": 4,
+   "list_i_needed": 2
+  },
+  "social_sciences": {
+   "name": "Social Sciences (at least 1 from List I)",
+   "needed": 2,
+   "list_i_needed": 1
+  },
+  "natural_sciences": {
+   "name": "Natural Sciences",
+   "needed": 2
+  },
+  "quantitative": {
+   "name": "Quantitative Thought",
+   "needed": 1
+  }
+ },
+ "english_courses": [
+  "ENGL 203",
+  "ENGL 204",
+  "ENGL 206"
+ ],
+ "notes": [
+  "FAS students must take CVSP courses for part of Humanities (one from Sequence I, one from Sequence II). Not modeled in this prototype.",
+  "No more than half of a GE area may come from the student's own major."
+ ],
+ "extra_ge_areas": {
+  "CMPS 269": [
+   "humanities_1"
+  ],
+  "CMPS 260": [
+   "quantitative"
+  ]
+ },
+ "source": "GE areas and sections from AUBsis Browse Classes, Spring 2026-2027, copied 17 Nov 2026 (Social Inequalities, Cultures and Histories, CHLA, part of Understanding the World). Other course names from the CCS club guide. Linked lecture+lab courses (PHYS 205, PHYS 205L, PHYS 210, PHYS 211) are not included yet.",
+ "courses": [
+  {
+   "code": "AGSC 205",
+   "title": "The Food Odyssey",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AGSC 212",
+   "title": "Microecono.Th.of Food& Farming",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "social_inequalities",
+    "social_sciences_ii",
+    "societies_and_individuals"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "social_sciences_2"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AHIS 203",
+   "title": "Ancient Mediterranean Art",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AHIS 205",
+   "title": "Art of Medieval Manuscripts",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AHIS 210",
+   "title": "Enlightenment & Art",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AHIS 224",
+   "title": "Art of Modern ME:19th Century",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AHIS 228",
+   "title": "Art of Modern ME:20th Century",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AHIS 249M",
+   "title": "ST.MappingCapital inArt&Cinema",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i",
+    "human_values"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AHIS 249N",
+   "title": "ST.Art During War",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AHIS 252",
+   "title": "Contemporary Art and Theory",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_ii"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_2"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AHIS 282",
+   "title": "Art and Cultural Criticism",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i",
+    "human_values",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AMST 215",
+   "title": "Intr. To American Studies",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AMST 265I",
+   "title": "ST. Polit. Anthro of the US",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "social_inequalities",
+    "societies_and_individuals",
+    "social_sciences_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "social_sciences_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AMST 275AO",
+   "title": "ST:Survey of American Literat.",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AMST 275BB",
+   "title": "Early American Literature",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AMST 275BD",
+   "title": "ST.Race.Immigratn.GraphicNovel",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AMST 275BE",
+   "title": "ST.Gender War&Cult:Tran Am Std",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AMST 275BF",
+   "title": "ST. The Invention of America",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AMST 276Y",
+   "title": "ST. Race and Gender in Lit.",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AMST 276Z",
+   "title": "ST. Feminism & American Empire",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ARAB 201",
+   "title": "Questions in Contemporary Arab Culture",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "arabic"
+   ],
+   "source": "CCS club guide (no schedule copied yet)"
+  },
+  {
+   "code": "ARAB 202",
+   "title": "Arabic Technical Writing",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "arabic"
+   ],
+   "source": "CCS club guide (no schedule copied yet)"
+  },
+  {
+   "code": "ARAB 210A",
+   "title": "Writing Prose",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "arabic"
+   ],
+   "source": "CCS club guide (no schedule copied yet)"
+  },
+  {
+   "code": "ARAB 212",
+   "title": "Survey of Arabic Grammar",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_ii"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_2"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ARAB 213",
+   "title": "Introductory Biblical Hebrew",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_ii"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_2"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ARAB 215",
+   "title": "Introductory Syriac",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ARAB 230",
+   "title": "Qs Themes &Genres of Arab Lit.",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "arabic_communication_skills",
+    "cultures_and_histories",
+    "humanities_i",
+    "understanding_communication"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "arabic",
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ARAB 231",
+   "title": "The Ode",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ARAB 236",
+   "title": "Qur'anic Studies",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "arabic_communication_skills",
+    "cultures_and_histories",
+    "humanities_i",
+    "understanding_communication"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "arabic",
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ARAB 238",
+   "title": "Arabic Poetry and Modernity",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "arabic_communication_skills",
+    "cultures_and_histories",
+    "humanities_i",
+    "understanding_communication"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "arabic",
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ARAB 243",
+   "title": "Arabic Rhetoric",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "arabic_communication_skills",
+    "cultures_and_histories",
+    "humanities_i",
+    "understanding_communication"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "arabic",
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ARAB 246",
+   "title": "The Lexicon of the Nahda",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "arabic_communication_skills",
+    "cultures_and_histories",
+    "humanities_i",
+    "understanding_communication"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "arabic",
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ARAB 251AA",
+   "title": "Sp.Tp: Society in Literature",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "arabic_communication_skills",
+    "cultures_and_histories",
+    "humanities_i",
+    "understanding_communication"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "arabic",
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ARAB 251AJ",
+   "title": "ST.The City in Arabic Lit.",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "arabic_communication_skills",
+    "cultures_and_histories",
+    "humanities_i",
+    "understanding_communication"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "arabic",
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ARAB 251AW",
+   "title": "ST.Reading in Judeo-Arabic Lit",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "arabic_communication_skills",
+    "cultures_and_histories",
+    "humanities_i",
+    "understanding_communication"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "arabic",
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ARAB 251BA",
+   "title": "ST. Modern Hebrew Language",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ARAB 251BB",
+   "title": "ST. The Arabic Story",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "arabic_communication_skills",
+    "cultures_and_histories",
+    "humanities_i",
+    "understanding_communication"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "arabic",
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ARAB 251P",
+   "title": "S.T:Arabic Feminist Literature",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "arabic_communication_skills",
+    "cultures_and_histories",
+    "humanities_ii",
+    "social_inequalities",
+    "understanding_communication"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "arabic",
+    "humanities_2"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ARAB 251W",
+   "title": "Sp.Tp: Nahda in periodicals",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "arabic_communication_skills",
+    "cultures_and_histories",
+    "humanities_i",
+    "understanding_communication"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "arabic",
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ARCH 122",
+   "title": "Hist.of Art &Architecture II",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ARCH 432",
+   "title": "Urbanism",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "social_inequalities",
+    "societies_and_individuals",
+    "social_sciences_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "social_sciences_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AROL 214",
+   "title": "The Human Story II",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_ii"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_2"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AROL 222",
+   "title": "Introduction to Greek Arch.",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AROL 224",
+   "title": "Intr. to the Roman World",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AROL 230",
+   "title": "Water in a Changing World",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "natural_sciences",
+    "understanding_the_world"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1",
+    "natural_sciences"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AROL 231",
+   "title": "Ancient Near Eastern Religions",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AROL 235AK",
+   "title": "ST. Museum Conservation",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "AROL 240",
+   "title": "Introduction to Ancient Egypt",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "BUSS 215",
+   "title": "Business Ethics",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "human_values",
+    "writing_in_the_discipline"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "BUSS 220",
+   "title": "Personal Financial Planning",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "social_sciences_1"
+   ],
+   "source": "CCS club guide (no schedule copied yet)"
+  },
+  {
+   "code": "CHEM 200",
+   "title": "Basic Chemistry and Applications",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "natural_sciences"
+   ],
+   "source": "CCS club guide (no schedule copied yet)"
+  },
+  {
+   "code": "CHLA 201",
+   "title": "Ancient Near East&Classic. Civ",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "CHLA 204A",
+   "title": "Tm.Contemp.Stud: Alien.&Lib.",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "CHLA 204B",
+   "title": "Tm. Crit. Perspectives on Mod.",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "CHLA 206",
+   "title": "Modern & Contemporary Studies",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "CHLA 209C",
+   "title": "Critical Theories&methods",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i",
+    "human_values",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "CHLA 210B",
+   "title": "Feminist Thought",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "CHLA 210D",
+   "title": "Race and Gender in Literature",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "CHLA 210G",
+   "title": "Tm.Crit. Approaches to Eco.",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "CHLA 211A",
+   "title": "Intro. to Normal &Pathological",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i",
+    "human_values"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "CHLA 211B",
+   "title": "Tm. The Soul and the body",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i",
+    "human_values"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "CHLA 212A",
+   "title": "Critical Approaches to AI",
+   "credits": 3,
+   "prereq": "ENGL 203",
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "CHLA 213B",
+   "title": "Apocalypse and Extinction",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "CHLA 213C",
+   "title": "Tm. The Ecology of Dunes",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "CHLA 214A",
+   "title": "Utopian Thought I.Gree to Thom",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i",
+    "human_values"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "CHLA 214B",
+   "title": "Human Values Through Time",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i",
+    "human_values"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "CHLA 214D",
+   "title": "Utopian Thought II",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i",
+    "human_values"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "CHLA 214H",
+   "title": "Tm. Political Imagination",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i",
+    "human_values"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "CHLA 263",
+   "title": "Modern & Contemp.World Theatre",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "CHLA 295B",
+   "title": "ST. What is Authority?",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i",
+    "human_values",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "CHLA 295C",
+   "title": "ST. Introduction to Marxism",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ECON 203",
+   "title": "Survey of Economics",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "social_sciences_2"
+   ],
+   "source": "CCS club guide (no schedule copied yet)"
+  },
+  {
+   "code": "ECON 211",
+   "title": "Elementary Microeconomic Theory",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "social_sciences_1"
+   ],
+   "source": "CCS club guide (no schedule copied yet)"
+  },
+  {
+   "code": "ECON 212",
+   "title": "Elementary Macroeconomic Theory",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "social_sciences_1"
+   ],
+   "source": "CCS club guide (no schedule copied yet)"
+  },
+  {
+   "code": "ECON 221",
+   "title": "History of Economic Thought",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ECON 237",
+   "title": "Economic Development I",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "social_inequalities",
+    "societies_and_individuals",
+    "social_sciences_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "social_sciences_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ECON 290D",
+   "title": "ST.Political Econ of Lebanon",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "social_inequalities",
+    "societies_and_individuals",
+    "social_sciences_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "social_sciences_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 205",
+   "title": "English Literature I",
+   "credits": 3,
+   "prereq": "ENGL 203",
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 207",
+   "title": "English Literature II",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 209",
+   "title": "Survey of American Literature",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 212",
+   "title": "Shakespeare",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 214",
+   "title": "Victorian Literature",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 219",
+   "title": "Film as Text",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 222A",
+   "title": "Tm.Race.Immigratn.GraphicNovel",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 224",
+   "title": "Early American Literature",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 227",
+   "title": "Introduction to Language",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 229",
+   "title": "History of English Language",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 233",
+   "title": "Introduction to Translation",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 236",
+   "title": "Creative Writing",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 240A",
+   "title": "Tm.Ecofiction:How2SaveThPlanet",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 240B",
+   "title": "Tm. The Invention of America",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 241A",
+   "title": "Tm.Gender War&Cult:Tran Am Std",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 244R",
+   "title": "Sp.Tp:Int.to Women & Gender St",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 249",
+   "title": "Fiction Writing",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 250",
+   "title": "Poetry Writing",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 254A",
+   "title": "S.T:ShortVideoWriting&Productn",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 254N",
+   "title": "ST.Directing Actors for Film",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 254O",
+   "title": "ST.Doc.film-writing&production",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 254P",
+   "title": "ST. Filming the Archive(s)",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 256E",
+   "title": "Tm. Digital Platforms &Publics",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 257H",
+   "title": "ST:Geopolitics of Film Adaptat",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "ENGL 264",
+   "title": "Fiction Writ.for Videos Games",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "GEOL 201",
+   "title": "Physical Geology",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "natural_sciences",
+    "understanding_the_world"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "natural_sciences"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "GEOL 204",
+   "title": "Dinosaurs and Life History",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "natural_sciences",
+    "understanding_the_world"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "natural_sciences"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "GEOL 208",
+   "title": "Water in a Changing World",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "natural_sciences",
+    "understanding_the_world"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1",
+    "natural_sciences"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "GEOL 227",
+   "title": "Alternate Energy & Climate",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "natural_sciences",
+    "understanding_the_world"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "natural_sciences"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "HIST 202",
+   "title": "Intro to Modern Hist Arab-East",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "HIST 238",
+   "title": "Ottoman St & Society 1600-1923",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "HIST 246",
+   "title": "From Grand Liban To Taef",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "HIST 278G",
+   "title": "ST. Feminism & American Empire",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "HPCH 201",
+   "title": "Health Awareness and Behavior",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "social_sciences_1"
+   ],
+   "source": "CCS club guide (no schedule copied yet)"
+  },
+  {
+   "code": "INDE 410",
+   "title": "Engineering Ethics",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "human_values"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "LDEM 208",
+   "title": "Landscape Architect.Hist. II",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "LDEM 230",
+   "title": "Water and the Environment",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "natural_sciences",
+    "understanding_the_world"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "natural_sciences"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "LDEM 268",
+   "title": "Intro. to Permaculture Design",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "natural_sciences",
+    "understanding_the_world"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "natural_sciences"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "LDEM 280",
+   "title": "The Ecology of Dunes",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "history_of_ideas",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "MATH 203",
+   "title": "Mathematics for Social Sciences I",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "quantitative"
+   ],
+   "source": "CCS club guide (no schedule copied yet)"
+  },
+  {
+   "code": "MATH 204",
+   "title": "Mathematics for Social Sciences II",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "quantitative"
+   ],
+   "source": "CCS club guide (no schedule copied yet)"
+  },
+  {
+   "code": "MCOM 204",
+   "title": "From Telegraph to Twitter",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "MCOM 219A",
+   "title": "Race and/in the media",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "MCOM 221",
+   "title": "War and Media",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "MCOM 227",
+   "title": "Media and the Environment",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "MSCU 204",
+   "title": "Coastal &Marine Environments",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "natural_sciences",
+    "understanding_the_world"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "natural_sciences"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "MUSC 205",
+   "title": "Harmony, Form & Composition",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "MUSC 221",
+   "title": "History of Western Music II",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_ii"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_2"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "MUSC 230",
+   "title": "History of Opera",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_ii"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_2"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "MUSC 231F",
+   "title": "ST. Philosophy and Music",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "MUSC 235",
+   "title": "History of Jazz",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "MUSC 239E",
+   "title": "ST. History of Rock and Pop",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "MUSC 239F",
+   "title": "ST. Modern Brazilian Music",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "MUSC 250",
+   "title": "History of Arabic & ME Music",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "MUSC 263",
+   "title": "Western Music Ensemble",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "MUSC 265",
+   "title": "Western Voice Performance",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "MUSC 266",
+   "title": "Arabic Voice Performance",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "MUSC 269B",
+   "title": "ST. Digital Audio Workstation",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_ii"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_2"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "MUSC 269C",
+   "title": "ST: Percussion Ensemble",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "NFSC 220",
+   "title": "Food & Nutrition Awareness",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "natural_sciences",
+    "understanding_the_world"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "natural_sciences"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "NFSC 223",
+   "title": "Nutrition & Physical Activity",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "natural_sciences",
+    "understanding_the_world"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "natural_sciences"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "NFSC 252",
+   "title": "Intr.to Food Processing",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "natural_sciences",
+    "understanding_the_world"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "natural_sciences"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "PHIL 201",
+   "title": "Introduction to Philosophy",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "PHIL 202A",
+   "title": "App.Phil. Philosophy of Food",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "human_values",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "PHIL 205",
+   "title": "Bio-Medical Ethics",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "human_values"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "PHIL 208A",
+   "title": "App Ethics: Ethics of AI",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "human_values"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "PHIL 208D",
+   "title": "AppEthics.Cont.Applied Ethics",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "human_values"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "PHIL 209",
+   "title": "Environmental Ethics",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "human_values"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "PHIL 210",
+   "title": "Ethics",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "human_values"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "PHIL 211",
+   "title": "Introduction to Logic",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "PHIL 213",
+   "title": "Medieval Philosophy",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "PHIL 219",
+   "title": "Existentialism",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "PHIL 222",
+   "title": "Philosophy of Science",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "PHIL 252S",
+   "title": "ST.Politics in the Digital Age",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "human_values"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "PHIL 257E",
+   "title": "ST. Philo. of Language and AI",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "human_values"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "PHIL 260C",
+   "title": "Sp.Tp:Hist.of Phil:Nietzshe",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_ii"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_2"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "PHIL 262B",
+   "title": "Sp.Tp:Contempora.:Wittgenstein",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "PHYS 200",
+   "title": "Understanding the Universe",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "natural_sciences",
+    "understanding_the_world"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "natural_sciences"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "PHYS 212",
+   "title": "Modern Physics",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "natural_sciences",
+    "understanding_the_world"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "natural_sciences"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "PSPA 202",
+   "title": "Introduction to Public Administration",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "social_sciences_2"
+   ],
+   "source": "CCS club guide (no schedule copied yet)"
+  },
+  {
+   "code": "PSPA 210",
+   "title": "Intr.to Political Thought",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "SART 201",
+   "title": "Painting I",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "SART 207",
+   "title": "The Digital Image",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "SOAN 201",
+   "title": "Introduction to Sociology",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "social_inequalities",
+    "societies_and_individuals",
+    "social_sciences_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "social_sciences_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "SOAN 203",
+   "title": "Introduction to Anthropology",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "SOAN 211",
+   "title": "Analysis of Social Data",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "quantitative_thought",
+    "quantitative_reasoning",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "quantitative"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "SOAN 213",
+   "title": "Sociological Theory",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "social_inequalities",
+    "societies_and_individuals",
+    "social_sciences_i",
+    "writing_in_the_discipline"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "social_sciences_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "SOAN 219",
+   "title": "Introd.to Development Studies",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "social_inequalities",
+    "societies_and_individuals",
+    "social_sciences_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "social_sciences_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "SOAN 220",
+   "title": "City and Society",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "SOAN 221",
+   "title": "Political Anthropology",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "SOAN 225",
+   "title": "Gender and Culture",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_ii",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_2"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "STAT 201",
+   "title": "Elementary Statistics for Social Sciences",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "quantitative"
+   ],
+   "source": "CCS club guide (no schedule copied yet)"
+  },
+  {
+   "code": "THTR 200",
+   "title": "Introduction to Theater",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "THTR 210",
+   "title": "Theater History",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "THTR 218D",
+   "title": "ST. Revenge Drama",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i",
+    "social_inequalities"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "THTR 240",
+   "title": "Design in Theater",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "THTR 259",
+   "title": "Workshop in Theater Production",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "THTR 260A",
+   "title": "ST: Theater and Society",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  },
+  {
+   "code": "THTR 260E",
+   "title": "ST.Appl.Theatre:Ed.Com&Soc.Chg",
+   "credits": 3,
+   "prereq": null,
+   "tags": [
+    "ge",
+    "cultures_and_histories",
+    "humanities_i"
+   ],
+   "counts_as_cmps_elective": false,
+   "focus_areas": [],
+   "ge_areas": [
+    "humanities_1"
+   ],
+   "source": "AUBsis Browse Classes"
+  }
+ ]
+}

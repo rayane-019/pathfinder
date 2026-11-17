@@ -55,7 +55,7 @@ def get_student_record(session, **_):
 
 
 # ---------- 2. search_courses ----------
-def search_courses(session, query="", tag=None, focus_area=None, only_electives=False, **_):
+def search_courses(session, query="", tag=None, focus_area=None, only_electives=False, ge_area=None, limit=15, **_):
     q = query.lower().strip()
     results = []
     for c in data.courses().values():
@@ -68,14 +68,58 @@ def search_courses(session, query="", tag=None, focus_area=None, only_electives=
             continue
         if only_electives and not c["counts_as_cmps_elective"]:
             continue
-        offered = any(s["course"] == c["code"] for s in data.sections().values())
+        if ge_area and not any(a.startswith(ge_area) for a in c.get("ge_areas", [])):
+            continue
+        secs = [s for s in data.sections().values() if s["course"] == c["code"]]
+        open_seats = sum(max(0, s["seats_open"] or 0) for s in secs)
         results.append({
             "code": c["code"], "title": c["title"], "credits": c["credits"],
             "counts_as_cmps_elective": c["counts_as_cmps_elective"],
-            "focus_areas": c["focus_areas"], "tags": c["tags"],
-            "offered_this_term": offered, "note": c.get("note"),
+            "focus_areas": c["focus_areas"], "ge_areas": c.get("ge_areas", []),
+            "offered_this_term": bool(secs), "has_open_seats": open_seats > 0, "note": c.get("note"),
         })
-    return {"count": len(results), "courses": results}
+    # Keep answers short (the free AI plan limits how much text we send per minute):
+    # courses with open seats first, then offered-but-full, then not offered.
+    results.sort(key=lambda r: (not r["has_open_seats"], not r["offered_this_term"]))
+    total = len(results)
+    results = results[:max(1, min(int(limit or 15), 40))]
+    return {"count": total, "showing": len(results), "courses": results,
+            "hint": "Only the first results are shown (open seats first). Use a narrower search for more."}
+
+
+# ---------- GE: check_ge_progress ----------
+def ge_progress(student):
+    """How many courses the student has done and still needs in each GE area."""
+    rules = data.ge_rules()
+    done = {c["code"] for c in student["completed"]}
+    count = {a: 0 for a in rules["ge_areas"]}
+    list_i = {"humanities": 0, "social_sciences": 0}
+    counted = []
+    for code in done:
+        if code in rules["english_courses"]:
+            count["english"] += 1; counted.append(f"{code} (English)"); continue
+        areas = data.courses().get(code, {}).get("ge_areas", [])
+        for a in areas:  # a course counts for its first area that still needs courses
+            group = a.rsplit("_", 1)[0] if a[-2:] in ("_1", "_2") else a
+            if group in count and count[group] < rules["ge_areas"][group]["needed"]:
+                count[group] += 1
+                if a.endswith("_1") and group in list_i:
+                    list_i[group] += 1
+                counted.append(f"{code} ({rules['ge_areas'][group]['name']})")
+                break
+    areas_out = {}
+    for a, info in rules["ge_areas"].items():
+        out = {"name": info["name"], "done": count[a], "needed": info["needed"],
+               "remaining": max(0, info["needed"] - count[a])}
+        if "list_i_needed" in info:
+            out["list_i_remaining"] = max(0, info["list_i_needed"] - list_i[a])
+        areas_out[a] = out
+    return {"areas": areas_out, "counted_courses": counted, "notes": rules["notes"],
+            "data_note": "Only courses in our GE list are counted. Check AUBsis for the official audit."}
+
+
+def check_ge_progress(session, **_):
+    return ge_progress(data.students()[session.student_id])
 
 
 # ---------- 3. check_prerequisites ----------
@@ -147,6 +191,7 @@ TOOLS = {
     "check_prerequisites": check_prerequisites,
     "find_sections": find_sections,
     "check_conflicts": check_conflicts,
+    "check_ge_progress": check_ge_progress,
     "submit_plan": submit_plan,
     "export_calendar": export_calendar,
 }
@@ -173,12 +218,18 @@ TOOL_SCHEMAS = [
         "Load the student's AUB record: completed courses with grades, credits, standing, "
         "remaining required CMPS courses, elective credits, focus areas and credit limit. Call this first.", {}),
     _fn("search_courses",
-        "Search the AUB CMPS course catalogue by text, tag (e.g. 'ai', 'systems', 'software', 'data') "
-        "or focus area ('systems', 'ai_data', 'software').",
+        "Search AUB courses (CMPS + General Education) by text, tag (e.g. 'ai', 'systems', 'software', 'data', "
+        "'ge', 'social_inequalities', 'human_values', 'history_of_ideas') or focus area ('systems', 'ai_data', 'software').",
         {"query": {"type": "string", "description": "Text or course code, e.g. 'machine learning' or 'CMPS 261'"},
          "tag": {"type": "string"},
          "focus_area": {"type": "string", "enum": ["systems", "ai_data", "software"]},
-         "only_electives": {"type": "boolean", "description": "Only courses that count as CMPS electives"}}),
+         "only_electives": {"type": "boolean", "description": "Only courses that count as CMPS electives"},
+         "ge_area": {"type": "string", "enum": ["english", "arabic", "humanities", "humanities_1", "social_sciences",
+                                                "social_sciences_1", "natural_sciences", "quantitative"],
+                     "description": "Only General Education (GE) courses in this area"}}),
+    _fn("check_ge_progress",
+        "Show the student's General Education (GE) progress: for each area (English, Arabic, Humanities, "
+        "Social Sciences, Natural Sciences, Quantitative Thought), how many courses are done and still needed.", {}),
     _fn("check_prerequisites",
         "Check whether the student may take each course, with the exact reason (AUB grade rules like C+ included).",
         {"course_codes": {"type": "array", "items": {"type": "string"}},
